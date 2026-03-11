@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MessageSquare, FileText, Sparkles, Phone, Clock, UserX, ArrowRight, Check, Lock, Globe, Mail, Zap, Upload, Briefcase, Heart, ChevronRight, Brain } from 'lucide-react';
 
@@ -96,6 +97,21 @@ const HeroIllustration = () => (
 // ─── Main Component ───────────────────────────────────────────────────────────
 
 const Index = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.currentTarget));
+    try {
+      await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, vertical: 'SoloTherapistAI' }),
+      });
+    } catch {}
+    setSubmitted(true);
+  };
+
   return (
     <>
       {/* ── 1. Hero ─────────────────────────────────────────────────────────── */}
@@ -588,10 +604,15 @@ const Index = () => {
               SoloTherapistAI is coming Q3 2026. Leave your info and we'll let you know the moment it's ready.
             </p>
           </div>
+          {submitted ? (
+            <div className="text-center py-8">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-100 mb-4"><Check className="h-6 w-6 text-green-600" /></div>
+              <h3 className="text-xl font-semibold mb-2">You're on the list!</h3>
+              <p className="text-slate-600">We'll notify you when SoloTherapistAI launches.</p>
+            </div>
+          ) : (
           <form
-            action="mailto:sean@solosolutionsai.com"
-            method="POST"
-            encType="text/plain"
+            onSubmit={handleSubmit}
             className="space-y-4"
           >
             <div className="grid sm:grid-cols-2 gap-4">
@@ -648,6 +669,7 @@ const Index = () => {
               We'll notify you when SoloTherapistAI launches. No spam, ever.
             </p>
           </form>
+          )}
         </div>
       </section>
 
