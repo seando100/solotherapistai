@@ -16,7 +16,7 @@ const Footer = () => {
                 Solo<span className="text-[#EC4899]">Therapist</span>AI
               </span>
             </div>
-            <p className="text-sm text-gray-500 mt-1">AI-powered client intake for mental health professionals.</p>
+            <p className="text-sm text-gray-500 mt-1">AI-powered patient intake for mental health professionals.</p>
           </div>
 
           <div className="flex items-center space-x-6">

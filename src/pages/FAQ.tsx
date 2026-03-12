@@ -16,24 +16,24 @@ const FAQ = () => {
           <p className={SECTION_LABEL}>How It Works</p>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="how-1">
-              <AccordionTrigger>How does the AI client intake work?</AccordionTrigger>
-              <AccordionContent>When a prospective client visits your intake link, they're guided through a warm, conversational intake experience. The AI gently asks about their presenting concerns, therapy history, what they're hoping to get from therapy, scheduling preferences, and insurance information. Clients respond naturally in their own words, and the system structures their answers into a clean intake summary delivered to your inbox.</AccordionContent>
+              <AccordionTrigger>How does the AI patient intake work?</AccordionTrigger>
+              <AccordionContent>When a prospective patient visits your intake link, they're guided through a warm, conversational intake experience. The AI gently asks about their presenting concerns, therapy history, what they're hoping to get from therapy, scheduling preferences, and insurance information. Patients respond naturally in their own words, and the system structures their answers into a clean intake summary delivered to your inbox.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="how-2">
-              <AccordionTrigger>What happens after a client submits?</AccordionTrigger>
-              <AccordionContent>You receive a detailed email with contact info, presenting concerns, and AI-generated session prep notes (comorbidity flags, treatment history patterns, scheduling considerations) — visible only to you. The client receives a warm confirmation email. All submissions are in your admin portal.</AccordionContent>
+              <AccordionTrigger>What happens after a patient submits?</AccordionTrigger>
+              <AccordionContent>You receive a detailed email with contact info, presenting concerns, and AI-generated session prep notes (comorbidity flags, treatment history patterns, scheduling considerations) — visible only to you. The patient receives a warm confirmation email. All submissions are in your admin portal.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="how-3">
               <AccordionTrigger>Does the AI provide therapy or counseling?</AccordionTrigger>
               <AccordionContent>Absolutely not. The AI is strictly an intake tool — it collects information on your behalf in a warm, non-judgmental way. It never provides therapeutic advice, diagnoses, coping strategies, or crisis intervention. All clinical judgment remains entirely with you as the licensed professional.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="how-4">
-              <AccordionTrigger>What happens if a client expresses suicidal thoughts or crisis?</AccordionTrigger>
+              <AccordionTrigger>What happens if a patient expresses suicidal thoughts or crisis?</AccordionTrigger>
               <AccordionContent>The AI includes an automated safety detection feature. If it detects language indicating immediate risk of harm to self or others, it provides the 988 Suicide & Crisis Lifeline number and Crisis Text Line information. This is an automated safety measure — it does not replace your clinical risk assessment protocols. You will also be notified immediately via your intake summary.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="how-5">
               <AccordionTrigger>Does it support bilingual intake?</AccordionTrigger>
-              <AccordionContent>Yes. Full English and Spanish support. Clients select their preferred language at the start. The entire intake is delivered in their chosen language. Your notification emails are always in English.</AccordionContent>
+              <AccordionContent>Yes. Full English and Spanish support. Patients select their preferred language at the start. The entire intake is delivered in their chosen language. Your notification emails are always in English.</AccordionContent>
             </AccordionItem>
           </Accordion>
 
@@ -56,8 +56,8 @@ const FAQ = () => {
               <AccordionContent>SoloTherapistAI is designed with HIPAA principles in mind — all data is encrypted in transit (TLS) and at rest (AES-256), documents auto-delete after 30 days, no human reviews intake data, and the AI provider does not use your data for training. We recommend consulting with your compliance advisor to ensure it meets your specific requirements.</AccordionContent>
             </AccordionItem>
             <AccordionItem value="sec-2">
-              <AccordionTrigger>Who can see my clients' intake submissions?</AccordionTrigger>
-              <AccordionContent>Only you. Intake data is scoped strictly to your account. No data is shared across accounts. The AI-generated session prep notes are for your eyes only and never shared with the client.</AccordionContent>
+              <AccordionTrigger>Who can see my patients' intake submissions?</AccordionTrigger>
+              <AccordionContent>Only you. Intake data is scoped strictly to your account. No data is shared across accounts. The AI-generated session prep notes are for your eyes only and never shared with the patient.</AccordionContent>
             </AccordionItem>
           </Accordion>
 

@@ -67,7 +67,7 @@ const BrandSettingsIllustration = () => (
         </div>
         {/* Right — live preview */}
         <div className="p-4 bg-slate-50/50">
-          <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-2.5">Client Preview</p>
+          <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-2.5">Patient Preview</p>
           <div className="rounded-lg overflow-hidden border border-slate-200 shadow-sm bg-white">
             {/* Mini browser bar */}
             <div className="bg-slate-100 px-2 py-1 flex items-center gap-1.5 border-b border-slate-200">
@@ -80,7 +80,7 @@ const BrandSettingsIllustration = () => (
                 solotherapistai.com/calmharbor
               </div>
             </div>
-            {/* Mini client intake page */}
+            {/* Mini patient intake page */}
             <div className="bg-[#0F2745] px-3 py-2.5 flex items-center gap-2">
               <div className="w-5 h-5 rounded bg-white/20 flex items-center justify-center flex-shrink-0">
                 <span className="text-[7px] font-bold text-white">CH</span>
@@ -109,7 +109,7 @@ const BrandSettingsIllustration = () => (
               </div>
             </div>
           </div>
-          <p className="text-[9px] text-slate-400 text-center mt-2">Clients see your brand — never SoloTherapistAI</p>
+          <p className="text-[9px] text-slate-400 text-center mt-2">Patients see your brand — never SoloTherapistAI</p>
         </div>
       </div>
     </div>
@@ -154,7 +154,7 @@ const ChatModeScreenshot = () => (
             <p className="text-xs text-slate-700 leading-relaxed">What's been on your mind that brought you to reach out today? There's no wrong answer — take your time.</p>
           </div>
         </div>
-        {/* Client bubble */}
+        {/* Patient bubble */}
         <div className="flex justify-end">
           <div className="bg-[#0F2745] rounded-2xl rounded-br-sm px-3 py-2 max-w-[72%]">
             <p className="text-xs text-white leading-relaxed">I've been struggling with anxiety for a while now. It's gotten worse since some changes at work, and it's starting to affect my relationships. I have trouble sleeping most nights.</p>
@@ -208,17 +208,17 @@ const IntakeSummaryScreenshot = () => (
           </div>
           <div>
             <p className="text-xs font-bold text-[#0F2745] uppercase tracking-wider leading-tight">Calm Harbor Therapy</p>
-            <p className="text-[10px] text-slate-400 leading-tight">New Client Intake — March 5, 2026</p>
+            <p className="text-[10px] text-slate-400 leading-tight">New Patient Intake — March 5, 2026</p>
           </div>
         </div>
         <span className="text-[10px] bg-pink-50 text-pink-700 border border-pink-200 rounded-full px-2.5 py-0.5 font-medium">New</span>
       </div>
       {/* Session details table */}
       <div className="px-6 pt-4 pb-3">
-        <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2.5">Client Details</p>
+        <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2.5">Patient Details</p>
         <div className="rounded-lg border border-slate-100 overflow-hidden text-[11px]">
           {[
-            ['Client', 'Alex Morgan'],
+            ['Patient', 'Alex Morgan'],
             ['Email', 'alex.morgan@email.com'],
             ['Phone', '(404) 555-0198'],
             ['Location', 'Atlanta, GA'],
@@ -238,9 +238,9 @@ const IntakeSummaryScreenshot = () => (
         <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2.5">AI Session Prep Notes</p>
         <div className="rounded-lg border border-amber-100 bg-amber-50 px-4 py-3 space-y-1.5">
           {[
-            'Client reports sleep disruption and appetite changes alongside anxiety — consider screening for comorbid depression (PHQ-9)',
+            'Patient reports sleep disruption and appetite changes alongside anxiety — consider screening for comorbid depression (PHQ-9)',
             'Work-related stress onset correlates with relationship strain — explore systemic stressors in first session',
-            'Client mentions feeling "overwhelmed all the time" — assess for generalized anxiety disorder criteria',
+            'Patient mentions feeling "overwhelmed all the time" — assess for generalized anxiety disorder criteria',
             'Evening preference may indicate daytime occupational demands — explore work-life balance dynamics',
           ].map((note) => (
             <div key={note} className="flex gap-2">
@@ -309,27 +309,27 @@ const Features = () => {
             Built for the Solo Therapist
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need to welcome new clients — without adding overhead or hiring staff.
+            Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need to welcome new patients — without adding overhead or hiring staff.
           </p>
         </div>
 
-        {/* Feature 1 — AI Client Intake — text left, visual right */}
+        {/* Feature 1 — AI Patient Intake — text left, visual right */}
         <div id="ai-intake" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
               Intake That Feels Like a Conversation
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Clients share their presenting concerns through a warm, conversational AI — in English or Spanish.
+              Patients share their presenting concerns through a warm, conversational AI — in English or Spanish.
               No clinical jargon, no overwhelming forms. You get the details you need, and they feel heard from the very first interaction.
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Warm conversational AI chat mode and structured form mode</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Give your AI assistant a name — clients meet "River" or "Haven," not a generic chatbot</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Bilingual — clients choose English or Spanish at the start</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Give your AI assistant a name — patients meet "River" or "Haven," not a generic chatbot</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Bilingual — patients choose English or Spanish at the start</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Fully customizable intake questions tailored to your specialty</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your confidentiality notice presented to every client before they begin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your logo, practice name, and greeting — clients never see SoloTherapistAI</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your confidentiality notice presented to every patient before they begin</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your logo, practice name, and greeting — patients never see SoloTherapistAI</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Crisis detection: surfaces 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when needed</li>
             </ul>
           </div>
@@ -417,16 +417,16 @@ const Features = () => {
               Prepare for Every First Session
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every submission arrives with a structured client summary and AI-generated session prep notes
+              Every submission arrives with a structured patient summary and AI-generated session prep notes
               — flagging comorbidity indicators, treatment history patterns, and
               suggested therapeutic approaches — so you're prepared the moment you sit down together.
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Organized client profile: name, contact, location, and presenting concerns</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Organized patient profile: name, contact, location, and presenting concerns</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI clinical notes — comorbidity flags, risk indicators, and therapeutic suggestions — for your eyes only</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Suggested first-session focus areas tailored to the presenting concern</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Delivered to your inbox the moment intake is submitted</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Client receives a warm, branded confirmation with their submission summary</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Patient receives a warm, branded confirmation with their submission summary</li>
             </ul>
           </div>
           <IntakeSummaryScreenshot />
@@ -448,7 +448,7 @@ const Features = () => {
                 <div className="px-5 py-3 space-y-2.5">
                   {[
                     { name: 'Insurance_Card_Front_Back.pdf', status: 'ready', summary: 'Blue Cross PPO, Group #4821, effective through Dec 2026. MH/SA benefits confirmed with $30 copay.' },
-                    { name: 'Referral_Letter_DrPatel.pdf', status: 'ready', summary: 'Primary care referral for anxiety and sleep disturbance. Notes elevated GAD-7 score (14). SSRI discussed but client prefers therapy first.' },
+                    { name: 'Referral_Letter_DrPatel.pdf', status: 'ready', summary: 'Primary care referral for anxiety and sleep disturbance. Notes elevated GAD-7 score (14). SSRI discussed but patient prefers therapy first.' },
                     { name: 'Prior_Treatment_Summary.pdf', status: 'ready', summary: 'CBT with previous therapist (2024, 12 sessions). Reported improvement in panic episodes. Terminated due to relocation.' },
                   ].map((doc) => (
                     <div key={doc.name} className="border border-slate-100 rounded-lg overflow-hidden">
@@ -480,17 +480,17 @@ const Features = () => {
               Documents In, Insights Out
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Request insurance forms, referral letters, prior treatment records, and medication lists from clients with one click.
-              AI recommends what to ask for based on the presenting concerns, clients upload securely, and every document is
+              Request insurance forms, referral letters, prior treatment records, and medication lists from patients with one click.
+              AI recommends what to ask for based on the presenting concerns, patients upload securely, and every document is
               automatically analyzed — key dates, findings, and clinically relevant highlights — ready for your review.
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI recommends documents based on specialty and presenting concerns</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Clients upload securely via a branded, encrypted portal</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Patients upload securely via a branded, encrypted portal</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI extracts key dates, findings, and clinically relevant highlights from each document</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Handles PDFs, images, scanned documents, and Word files</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> 30-day secure retention — pass-through, not a vault</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> No human ever views client documents — fully automated</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> No human ever views patient documents — fully automated</li>
             </ul>
           </div>
         </div>
@@ -506,7 +506,7 @@ const Features = () => {
               AI Intelligence Brief
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the client shared.
+              Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the patient shared.
               The Intelligence Brief identifies comorbidity indicators, treatment history patterns, risk factors,
               and suggests therapeutic considerations — so you walk into
               every first session with the clinical preparation of a specialist.
@@ -549,7 +549,7 @@ const Features = () => {
                 <div>
                   <p className="text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-2">Treatment History Insights</p>
                   <div className="bg-slate-50 border border-slate-100 rounded-lg px-3 py-2">
-                    <p className="text-[10px] text-slate-600 leading-snug">Prior CBT engagement (12 sessions, 2024) with reported improvement in panic episodes. Therapy terminated due to relocation, not dissatisfaction. Client may respond well to CBT continuation or integrative approach combining CBT with mindfulness-based techniques.</p>
+                    <p className="text-[10px] text-slate-600 leading-snug">Prior CBT engagement (12 sessions, 2024) with reported improvement in panic episodes. Therapy terminated due to relocation, not dissatisfaction. Patient may respond well to CBT continuation or integrative approach combining CBT with mindfulness-based techniques.</p>
                   </div>
                 </div>
                 {/* Risk indicators */}
@@ -592,14 +592,14 @@ const Features = () => {
               Your Brand, Your Link
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Clients never see "SoloTherapistAI." They see your practice name, your logo, and your intake
+              Patients never see "SoloTherapistAI." They see your practice name, your logo, and your intake
               page — at a URL you control. Every detail is configurable from your admin portal,
               and when they're ready for their first session, send a one-click scheduling invite.
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your own vanity URL (e.g. solotherapistai.com/yourpractice)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Upload your practice logo — shown on every client-facing screen and email</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Set your assistant's name, client greeting, and specialty focus</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Upload your practice logo — shown on every patient-facing screen and email</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Set your assistant's name, patient greeting, and specialty focus</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Configure confidentiality notices in English and Spanish</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pause intake instantly with a custom unavailability message</li>
               <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Send session invites via Calendly or any scheduling link</li>
@@ -643,7 +643,7 @@ const Features = () => {
                 Admin Portal
               </CardTitle>
               <CardDescription>
-                Review every submission, track status, manage documents, and organize your client pipeline in one place.
+                Review every submission, track status, manage documents, and organize your patient pipeline in one place.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -663,13 +663,13 @@ const Features = () => {
                 Email Notifications
               </CardTitle>
               <CardDescription>
-                You and your client both get a confirmation the moment an intake is submitted.
+                You and your patient both get a confirmation the moment an intake is submitted.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li>• Instant therapist alert email</li>
-                <li>• Warm, professional client confirmation</li>
+                <li>• Warm, professional patient confirmation</li>
                 <li>• Branded with your practice identity</li>
               </ul>
             </CardContent>
@@ -682,14 +682,14 @@ const Features = () => {
                 Security &amp; Privacy
               </CardTitle>
               <CardDescription>
-                Designed with HIPAA principles in mind. Client data is encrypted in transit and at rest.
+                Designed with HIPAA principles in mind. Patient data is encrypted in transit and at rest.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li>• AES-256 encryption at rest, TLS in transit</li>
                 <li>• No human review — fully automated AI processing</li>
-                <li>• 30-day document retention with client deletion rights</li>
+                <li>• 30-day document retention with patient deletion rights</li>
                 <li>• Confidentiality and data handling notice included</li>
               </ul>
             </CardContent>

@@ -21,7 +21,7 @@ const ClientCard = ({ title, body }: { title: string; body: string }) => (
       <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
         <Heart className="h-4 w-4 text-pink-600" />
       </div>
-      <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Clients</span>
+      <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
     </div>
     <p className="text-sm font-semibold text-slate-800 mb-1">{title}</p>
     <p className="text-sm text-slate-500 leading-relaxed">{body}</p>
@@ -45,11 +45,11 @@ const Benefits = () => {
       <section className="pt-16 md:pt-24 pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Better for You. Better for Clients.
+            Better for You. Better for Patients.
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             When your intake runs smarter, everyone wins. You reclaim your time between sessions and walk into every
-            first meeting prepared. Your clients feel heard, supported, and cared for — from the very first interaction.
+            first meeting prepared. Your patients feel heard, supported, and cared for — from the very first interaction.
           </p>
         </div>
       </section>
@@ -60,20 +60,20 @@ const Benefits = () => {
           <div className="text-center mb-16">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">The Intake Journey</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Follow a client from first contact to first session — and see how every step creates value for both sides.
+              Follow a patient from first contact to first session — and see how every step creates value for both sides.
             </p>
           </div>
 
           <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-8 md:gap-y-0">
 
-            {/* Step 1: Client Reaches Out */}
+            {/* Step 1: Patient Reaches Out */}
             <div className="flex md:justify-end">
               <TherapistCard
-                title="Never miss a new client"
+                title="Never miss a new patient"
                 body="Intake runs 24/7 — nights, weekends, holidays. Every person who reaches out is captured the moment they find the courage to take that first step. No more lost connections to voicemail or after-hours silence."
               />
             </div>
-            <StepIcon icon={Phone} label="Client Reaches Out" />
+            <StepIcon icon={Phone} label="Patient Reaches Out" />
             <div className="flex md:justify-start">
               <ClientCard
                 title="Get a caring response the moment you're ready"
@@ -135,7 +135,7 @@ const Benefits = () => {
           <div className="text-center mb-14">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">Every Feature, Two Winners</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Beyond the intake journey, every capability in SoloTherapistAI creates a ripple effect — making your practice more efficient and your clients' experience more supportive and professional.
+              Beyond the intake journey, every capability in SoloTherapistAI creates a ripple effect — making your practice more efficient and your patients' experience more supportive and professional.
             </p>
           </div>
 
@@ -151,10 +151,10 @@ const Benefits = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Serve Spanish-speaking clients without hiring bilingual staff or paying for interpreter services. Expand your practice reach.</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Serve Spanish-speaking patients without hiring bilingual staff or paying for interpreter services. Expand your practice reach.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Communicate in the language you're most comfortable in — sharing vulnerable feelings is hard enough without a language barrier.</p>
                 </div>
               </div>
@@ -175,7 +175,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">A dedicated phone line that handles intake calls 24/7. Same structured summary, zero phone tag between sessions.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Prefer talking over typing? Call anytime and speak naturally about what you're going through — no hold music, no phone trees.</p>
                 </div>
               </div>
@@ -196,7 +196,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">AI analyzes uploaded insurance forms, referral letters, prior treatment records, and medication lists — extracting key details and clinical highlights before you review.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">A simple, secure way to share what's needed. Clear checklist, encrypted upload, no confusion about what to bring.</p>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">Built-in crisis detection surfaces the 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when language indicates acute distress. Risk indicators flagged in your summary.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">If you're in crisis, you'll be immediately connected to trained professionals who can help right now — 988 Suicide & Crisis Lifeline, available 24/7.</p>
                 </div>
               </div>
@@ -236,7 +236,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">Designed with HIPAA principles in mind. End-to-end encryption, confidentiality protections, and 30-day document retention with deletion rights.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Everything you share is treated with the same confidentiality as an in-person conversation. Fully encrypted, fully automated — no human sees your data.</p>
                 </div>
               </div>
@@ -253,10 +253,10 @@ const Benefits = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">One line of code embeds intake directly on your WordPress or any website. Capture prospective clients where they already are.</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">One line of code embeds intake directly on your WordPress or any website. Capture prospective patients where they already are.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Start your intake without leaving your therapist's website. No new tabs, no separate portals — just a welcoming conversation right where you are.</p>
                 </div>
               </div>
@@ -277,7 +277,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">Every intake generates a deep-dive analysis — comorbidity flags, treatment history patterns, risk indicators, and suggested therapeutic approaches for the first session.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Your therapist spots patterns and concerns you might not have connected yourself — not just what you came in for, but the full picture of what's affecting your wellbeing.</p>
                 </div>
               </div>
@@ -298,7 +298,7 @@ const Benefits = () => {
                   <p className="text-sm text-slate-500 leading-relaxed">Generate branded social posts and visual cards for Facebook, Instagram, LinkedIn, and Psychology Today in seconds — no designer, no copywriter needed.</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Clients</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Find a therapist who feels right for you — on social media, directories, and community boards. One click starts your intake journey.</p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ const Benefits = () => {
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-8">
             Solo therapists don't have intake coordinators, front-desk staff, or 24/7 answering services.
-            Your clients don't know that — and with SoloTherapistAI, they'll never need to. Every interaction
+            Your patients don't know that — and with SoloTherapistAI, they'll never need to. Every interaction
             feels like a well-staffed practice with the personal depth and warmth only a solo practitioner can provide.
           </p>
           <p className="text-sm text-slate-400 mb-10">

@@ -13,7 +13,7 @@ const Terms = () => {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">2. Description of Service</h2>
-            <p className="text-muted-foreground">SoloTherapistAI provides an automated client intake platform for mental health professionals. The Service includes intake creation, AI-powered summaries, email notifications, client management tools, and document upload and AI analysis capabilities.</p>
+            <p className="text-muted-foreground">SoloTherapistAI provides an automated patient intake platform for mental health professionals. The Service includes intake creation, AI-powered summaries, email notifications, patient management tools, and document upload and AI analysis capabilities.</p>
           </section>
 
           <section>
@@ -51,9 +51,9 @@ const Terms = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">6. Therapist-Client Relationship</h2>
+            <h2 className="text-2xl font-semibold mb-4">6. Therapist-Patient Relationship</h2>
             <p className="text-muted-foreground">
-              <strong>IMPORTANT:</strong> SoloTherapistAI is a software tool only. Use of this Service does not create a therapist-client relationship between you and SoloTherapistAI or between you and individuals who submit intake forms. The AI assistant does not provide therapy, counseling, crisis intervention, diagnoses, or treatment recommendations of any kind. You are solely responsible for establishing therapeutic relationships and providing clinical care according to your jurisdiction's licensing requirements and professional ethics standards.
+              <strong>IMPORTANT:</strong> SoloTherapistAI is a software tool only. Use of this Service does not create a therapist-patient relationship between you and SoloTherapistAI or between you and individuals who submit intake forms. The AI assistant does not provide therapy, counseling, crisis intervention, diagnoses, or treatment recommendations of any kind. You are solely responsible for establishing therapeutic relationships and providing clinical care according to your jurisdiction's licensing requirements and professional ethics standards.
             </p>
           </section>
 
@@ -71,13 +71,13 @@ const Terms = () => {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">7A. Document Uploads</h2>
-            <p className="text-muted-foreground mb-4">The Service allows therapists to request documents from clients. By uploading, the client consents to:</p>
+            <p className="text-muted-foreground mb-4">The Service allows therapists to request documents from patients. By uploading, the patient consents to:</p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
               <li><strong>AI Analysis:</strong> Documents are processed by AI to generate structured summaries. AI summaries do not constitute clinical assessments, diagnoses, or treatment plans.</li>
               <li><strong>No Human Review:</strong> All processing is fully automated. No SoloTherapistAI employee views uploaded documents.</li>
               <li><strong>Limited Retention:</strong> Documents are automatically deleted 30 days after upload.</li>
               <li><strong>Access Control:</strong> Documents are accessible only to the requesting therapist. Encrypted in transit (TLS) and at rest (AES-256).</li>
-              <li><strong>Deletion Rights:</strong> Clients may request immediate deletion at any time by contacting sean@solosolutionsai.com.</li>
+              <li><strong>Deletion Rights:</strong> Patients may request immediate deletion at any time by contacting sean@solosolutionsai.com.</li>
             </ul>
             <p className="text-muted-foreground"><strong>Therapist Responsibility:</strong> Therapists are responsible for ensuring compliance with HIPAA, state licensing requirements, professional ethics standards, and all applicable data protection laws.</p>
           </section>

@@ -9,7 +9,7 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
             <p className="text-muted-foreground">
-              SoloTherapistAI ("we," "our," or "us"), a product of SoloSolutionsAI, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our client intake automation service for mental health professionals. We designed SoloTherapistAI with HIPAA principles in mind and treat all client information with the highest standard of care.
+              SoloTherapistAI ("we," "our," or "us"), a product of SoloSolutionsAI, is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our patient intake automation service for mental health professionals. We designed SoloTherapistAI with HIPAA principles in mind and treat all patient information with the highest standard of care.
             </p>
           </section>
 
@@ -19,13 +19,13 @@ const Privacy = () => {
             <p className="text-muted-foreground mb-4">
               When you create an account, we collect: name, email address, practice name, office location, phone number, therapeutic specializations, credentials, and optional practice logo.
             </p>
-            <h3 className="text-xl font-semibold mb-2">2.2 Client Intake Information</h3>
+            <h3 className="text-xl font-semibold mb-2">2.2 Patient Intake Information</h3>
             <p className="text-muted-foreground mb-4">
-              Information submitted by clients through intake forms including: name, contact information, presenting concerns, therapy history, scheduling preferences, insurance information, and any additional information provided in the intake.
+              Information submitted by patients through intake forms including: name, contact information, presenting concerns, therapy history, scheduling preferences, insurance information, and any additional information provided in the intake.
             </p>
             <h3 className="text-xl font-semibold mb-2">2.3 Uploaded Documents</h3>
             <p className="text-muted-foreground">
-              When a client uploads documents at the request of their therapist, we collect the document files, file names, file types, and file sizes. Documents may include insurance verification forms, prior treatment records, psychological assessments, referral letters, or medication lists. Providing documents is entirely voluntary.
+              When a patient uploads documents at the request of their therapist, we collect the document files, file names, file types, and file sizes. Documents may include insurance verification forms, prior treatment records, psychological assessments, referral letters, or medication lists. Providing documents is entirely voluntary.
             </p>
           </section>
 
@@ -34,9 +34,9 @@ const Privacy = () => {
             <p className="text-muted-foreground mb-4">We use collected information to:</p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground">
               <li>Provide and maintain our service</li>
-              <li>Process client intake submissions and route them to the appropriate therapist</li>
+              <li>Process patient intake submissions and route them to the appropriate therapist</li>
               <li>Send email notifications about new intake submissions</li>
-              <li>Generate AI-powered summaries of client intakes</li>
+              <li>Generate AI-powered summaries of patient intakes</li>
               <li>Analyze uploaded documents using AI to produce structured summaries, helping therapists prepare for initial sessions more effectively</li>
               <li>Improve and personalize our service</li>
               <li>Respond to customer service requests</li>
@@ -53,13 +53,13 @@ const Privacy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">5. Data Retention</h2>
             <p className="text-muted-foreground mb-4">
-              We retain therapist account information for as long as your account is active. Client intake submissions are retained unless you request deletion.
+              We retain therapist account information for as long as your account is active. Patient intake submissions are retained unless you request deletion.
             </p>
             <p className="text-muted-foreground mb-4">
-              <strong>Uploaded Documents:</strong> Client-uploaded documents and their AI-generated summaries are automatically deleted from our system 30 days after upload. SoloTherapistAI is designed as a pass-through service, not a permanent record repository. Therapists are responsible for downloading and saving any documents they need to their own HIPAA-compliant systems.
+              <strong>Uploaded Documents:</strong> Patient-uploaded documents and their AI-generated summaries are automatically deleted from our system 30 days after upload. SoloTherapistAI is designed as a pass-through service, not a permanent record repository. Therapists are responsible for downloading and saving any documents they need to their own HIPAA-compliant systems.
             </p>
             <p className="text-muted-foreground">
-              <strong>Right to Deletion:</strong> Clients may request immediate deletion of their uploaded documents at any time by contacting <a href="mailto:privacy@solotherapistai.com" className="text-primary hover:underline">privacy@solotherapistai.com</a>.
+              <strong>Right to Deletion:</strong> Patients may request immediate deletion of their uploaded documents at any time by contacting <a href="mailto:privacy@solotherapistai.com" className="text-primary hover:underline">privacy@solotherapistai.com</a>.
             </p>
           </section>
 

@@ -4,19 +4,19 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const STARTER_FEATURES = [
-  "AI client intake — conversational chat and structured form",
+  "AI patient intake — conversational chat and structured form",
   "Bilingual support (English & Spanish)",
   "Branded intake link — vanity URL, your logo and greeting",
   "Structured intake summary delivered to your inbox",
   "AI clinical insights flagging presenting concerns and session prep notes",
-  "Therapist + client email notifications",
+  "Therapist + patient email notifications",
   "Consultation invite via Calendly or scheduling link",
   "Admin portal — review and manage all submissions",
-  "Up to 50 client intakes per month",
+  "Up to 50 patient intakes per month",
 ];
 
 const PRO_EXTRAS = [
-  "Up to 150 client intakes per month",
+  "Up to 150 patient intakes per month",
   "Marketing Kit — generate social media posts and branded visual cards",
   "Platform-ready post copy for Facebook, Instagram, LinkedIn & Nextdoor",
   "Branded image cards sized for every platform (7 formats)",
@@ -25,9 +25,9 @@ const PRO_EXTRAS = [
 ];
 
 const PRO_PLUS_EXTRAS = [
-  "Unlimited client intakes per month",
+  "Unlimited patient intakes per month",
   "Dedicated AI phone intake line — your own local number",
-  "Clients speak naturally with your AI assistant — 24/7, in a warm, safe environment",
+  "Patients speak naturally with your AI assistant — 24/7, in a warm, safe environment",
   "Document Intelligence — request, receive, and AI-analyze clinical documents",
   "AI extracts treatment history, medication lists, diagnoses, and insurance details",
   "Secure encrypted uploads with 30-day retention",
@@ -99,7 +99,7 @@ const Pricing = () => {
           <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1"><AccordionTrigger>What's included in the free trial?</AccordionTrigger><AccordionContent>Your 14-day free trial gives you full access to everything. A credit card is required at signup, but you won't be charged until day 15.</AccordionContent></AccordionItem>
-            <AccordionItem value="item-2"><AccordionTrigger>Does the AI provide therapy or counseling?</AccordionTrigger><AccordionContent>No. The AI assistant is strictly an intake tool — it collects information and presenting concerns from prospective clients on your behalf. It never provides therapeutic advice, diagnoses, or crisis intervention. If it detects language indicating immediate risk, it provides 988 Suicide & Crisis Lifeline information as an automated safety measure.</AccordionContent></AccordionItem>
+            <AccordionItem value="item-2"><AccordionTrigger>Does the AI provide therapy or counseling?</AccordionTrigger><AccordionContent>No. The AI assistant is strictly an intake tool — it collects information and presenting concerns from prospective patients on your behalf. It never provides therapeutic advice, diagnoses, or crisis intervention. If it detects language indicating immediate risk, it provides 988 Suicide & Crisis Lifeline information as an automated safety measure.</AccordionContent></AccordionItem>
             <AccordionItem value="item-3"><AccordionTrigger>Is SoloTherapistAI HIPAA compliant?</AccordionTrigger><AccordionContent>SoloTherapistAI is designed with HIPAA principles in mind — all data is encrypted in transit and at rest, documents auto-delete after 30 days, and no human reviews intake data. We recommend consulting with your compliance advisor to ensure it meets your specific practice requirements.</AccordionContent></AccordionItem>
             <AccordionItem value="item-4"><AccordionTrigger>Can I switch plans?</AccordionTrigger><AccordionContent>Yes. Upgrade anytime with prorated billing. Downgrades take effect at your next billing period.</AccordionContent></AccordionItem>
             <AccordionItem value="item-5"><AccordionTrigger>Can I cancel anytime?</AccordionTrigger><AccordionContent>Yes. Cancel from your account settings. Access continues through the end of your billing period.</AccordionContent></AccordionItem>

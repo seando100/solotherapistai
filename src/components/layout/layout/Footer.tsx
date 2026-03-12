@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="text-xl font-semibold tracking-tight text-[#0F2745]">
               Solo<span className="text-[#EC4899]">Therapist</span>AI
             </div>
-            <p className="text-sm text-gray-500 mt-1">AI-powered client intake for mental health professionals.</p>
+            <p className="text-sm text-gray-500 mt-1">AI-powered patient intake for mental health professionals.</p>
           </div>
 
           <div className="flex items-center space-x-6">

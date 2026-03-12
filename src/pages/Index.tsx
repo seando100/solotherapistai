@@ -129,10 +129,10 @@ const Index = () => {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1]">
-                Your Next Client Intake Runs Itself.
+                Your Next Patient Intake Runs Itself.
               </h1>
               <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
-                SoloTherapistAI handles client intake by chat, phone, or website widget — warmly gathering presenting concerns, history, and preferences — and delivers a structured session prep summary with AI clinical insights — so you're ready before the first session begins.
+                SoloTherapistAI handles patient intake by chat, phone, or website widget — warmly gathering presenting concerns, history, and preferences — and delivers a structured session prep summary with AI clinical insights — so you're ready before the first session begins.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <a
@@ -184,20 +184,20 @@ const Index = () => {
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">Sound familiar?</h2>
             <p className="text-lg text-white/60 max-w-2xl mx-auto">
-              Solo therapists lose clients and burn precious energy on the same three problems every day.
+              Solo therapists lose patients and burn precious energy on the same three problems every day.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 icon: Phone,
-                title: 'Phone tag with anxious clients',
+                title: 'Phone tag with anxious patients',
                 body: 'Someone works up the courage to call your practice. They get voicemail. By the time you call back between sessions, the moment has passed — they never return the call, or they\'ve already reached out to someone else.',
               },
               {
                 icon: Clock,
-                title: 'Intake paperwork overwhelms new clients',
-                body: 'A new client arrives to their first session carrying a clipboard of forms they barely understand. You spend half the session gathering basics instead of building rapport and understanding their needs.',
+                title: 'Intake paperwork overwhelms new patients',
+                body: 'A new patient arrives to their first session carrying a clipboard of forms they barely understand. You spend half the session gathering basics instead of building rapport and understanding their needs.',
               },
               {
                 icon: UserX,
@@ -226,22 +226,22 @@ const Index = () => {
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Everything you need. Nothing you don't.</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Six powerful capabilities that transform how solo therapists welcome new clients.
+              Six powerful capabilities that transform how solo therapists welcome new patients.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 icon: MessageSquare,
-                title: 'AI Client Intake',
-                body: 'A warm, branded AI assistant gathers presenting concerns, history, and preferences — via chat, form, or website widget, in English or Spanish — while you focus on your current clients.',
+                title: 'AI Patient Intake',
+                body: 'A warm, branded AI assistant gathers presenting concerns, history, and preferences — via chat, form, or website widget, in English or Spanish — while you focus on your current patients.',
                 link: '/features#ai-intake',
               },
               {
                 icon: Phone,
                 title: 'AI Phone Intake',
                 badge: 'Pro+',
-                body: 'A dedicated phone number where clients speak naturally with your AI assistant. Every call becomes a structured session prep summary — 24/7, no hold music, no missed opportunities.',
+                body: 'A dedicated phone number where patients speak naturally with your AI assistant. Every call becomes a structured session prep summary — 24/7, no hold music, no missed opportunities.',
                 link: '/features#phone-intake',
               },
               {
@@ -254,7 +254,7 @@ const Index = () => {
                 icon: Upload,
                 title: 'Document Intelligence',
                 badge: 'Pro+',
-                body: 'Request insurance forms, referral letters, prior treatment records, and medication lists from clients. Receive secure uploads and get AI-powered summaries with clinically relevant highlights.',
+                body: 'Request insurance forms, referral letters, prior treatment records, and medication lists from patients. Receive secure uploads and get AI-powered summaries with clinically relevant highlights.',
                 link: '/features#document-intelligence',
               },
               {
@@ -309,19 +309,19 @@ const Index = () => {
                 number: '01',
                 icon: Zap,
                 title: 'Set up your profile',
-                description: 'Upload your logo, name your assistant, add your specialties and intake questions, and get your unique client intake link — in under 10 minutes.',
+                description: 'Upload your logo, name your assistant, add your specialties and intake questions, and get your unique patient intake link — in under 10 minutes.',
               },
               {
                 number: '02',
                 icon: MessageSquare,
                 title: 'Share your intake link',
-                description: 'Add it to your website, Psychology Today profile, email signature, or anywhere you connect with prospective clients. Your AI handles every conversation — 24/7.',
+                description: 'Add it to your website, Psychology Today profile, email signature, or anywhere you connect with prospective patients. Your AI handles every conversation — 24/7.',
               },
               {
                 number: '03',
                 icon: FileText,
                 title: 'Review and prepare',
-                description: 'Get a structured summary with AI clinical insights the moment a client submits. Know the presenting concerns, history, and the right questions before your first session.',
+                description: 'Get a structured summary with AI clinical insights the moment a patient submits. Know the presenting concerns, history, and the right questions before your first session.',
               },
             ].map(({ number, icon: Icon, title, description }) => (
               <div key={number} className="flex flex-col items-center text-center relative">
@@ -342,17 +342,17 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-              Better for You. Better for Clients.
+              Better for You. Better for Patients.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              When your intake runs smarter, everyone wins — you reclaim your time between sessions, and clients feel heard and supported from the very first interaction.
+              When your intake runs smarter, everyone wins — you reclaim your time between sessions, and patients feel heard and supported from the very first interaction.
             </p>
           </div>
 
           {/* Process flow infographic */}
           <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-[1fr_auto_1fr] md:gap-x-8 md:gap-y-0">
 
-            {/* ── Step 1: Client Reaches Out ── */}
+            {/* ── Step 1: Patient Reaches Out ── */}
             <div className="flex md:justify-end">
               <div className="bg-white border border-slate-200 rounded-xl p-5 max-w-sm w-full shadow-sm">
                 <div className="flex items-center gap-3 mb-2">
@@ -361,7 +361,7 @@ const Index = () => {
                   </div>
                   <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">For You</span>
                 </div>
-                <p className="text-sm font-semibold text-slate-800 mb-1">Never miss a new client</p>
+                <p className="text-sm font-semibold text-slate-800 mb-1">Never miss a new patient</p>
                 <p className="text-sm text-slate-500 leading-relaxed">Intake runs 24/7 — nights, weekends, holidays. Every person who reaches out is captured the moment they find the courage to take that first step.</p>
               </div>
             </div>
@@ -369,7 +369,7 @@ const Index = () => {
               <div className="w-14 h-14 rounded-full bg-[#0F2745] flex items-center justify-center shadow-lg ring-4 ring-[#0F2745]/10">
                 <Phone className="h-6 w-6 text-white" />
               </div>
-              <p className="text-xs font-bold text-[#0F2745] mt-3 text-center">Client Reaches Out</p>
+              <p className="text-xs font-bold text-[#0F2745] mt-3 text-center">Patient Reaches Out</p>
               <div className="hidden md:block w-px h-8 bg-slate-200 mt-3" />
             </div>
             <div className="flex md:justify-start">
@@ -378,7 +378,7 @@ const Index = () => {
                   <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
                     <Heart className="h-4 w-4 text-pink-600" />
                   </div>
-                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Clients</span>
+                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">Get a caring response the moment you're ready</p>
                 <p className="text-sm text-slate-500 leading-relaxed">No voicemail, no waiting until Monday. Reach out at midnight when the weight feels heaviest and receive an immediate, warm, judgment-free response.</p>
@@ -411,7 +411,7 @@ const Index = () => {
                   <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
                     <Heart className="h-4 w-4 text-pink-600" />
                   </div>
-                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Clients</span>
+                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">Share your story in a safe, unhurried space</p>
                 <p className="text-sm text-slate-500 leading-relaxed">No intimidating forms or clinical jargon. A warm, empathetic conversation that feels safe — so you can explain what you're going through at your own pace.</p>
@@ -428,7 +428,7 @@ const Index = () => {
                   <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">For You</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">Walk into every first session fully prepared</p>
-                <p className="text-sm text-slate-500 leading-relaxed">AI-generated session prep with presenting concern analysis, comorbidity flags, and suggested therapeutic approaches — before the client walks through the door.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">AI-generated session prep with presenting concern analysis, comorbidity flags, and suggested therapeutic approaches — before the patient walks through the door.</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
@@ -444,7 +444,7 @@ const Index = () => {
                   <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
                     <Heart className="h-4 w-4 text-pink-600" />
                   </div>
-                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Clients</span>
+                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">Your therapist already understands your situation</p>
                 <p className="text-sm text-slate-500 leading-relaxed">No repeating yourself. Your first session starts where it should — with connection, understanding, and a plan for moving forward together.</p>
@@ -461,7 +461,7 @@ const Index = () => {
                   <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">For You</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">More time for what matters</p>
-                <p className="text-sm text-slate-500 leading-relaxed">Spend your session on therapeutic work and building rapport — not gathering demographics or asking the same screening questions you ask every new client.</p>
+                <p className="text-sm text-slate-500 leading-relaxed">Spend your session on therapeutic work and building rapport — not gathering demographics or asking the same screening questions you ask every new patient.</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
@@ -476,7 +476,7 @@ const Index = () => {
                   <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
                     <Heart className="h-4 w-4 text-pink-600" />
                   </div>
-                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Clients</span>
+                  <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
                 </div>
                 <p className="text-sm font-semibold text-slate-800 mb-1">A faster path to feeling better</p>
                 <p className="text-sm text-slate-500 leading-relaxed">From "I need to talk to someone" to a meaningful first session — faster and more comfortably than you thought possible. You deserve care that starts the moment you reach out.</p>
@@ -520,7 +520,7 @@ const Index = () => {
                   'Branded assistant & vanity URL',
                   'Bilingual (English & Spanish)',
                   'Session prep summary + AI clinical notes',
-                  'Email alerts for therapist & client',
+                  'Email alerts for therapist & patient',
                   'Calendly scheduling integration',
                 ].map(f => (
                   <li key={f} className="flex items-start gap-2.5 text-sm text-slate-600">
@@ -575,7 +575,7 @@ const Index = () => {
                   'Everything in Pro',
                   'Dedicated AI phone intake line',
                   'Document Intelligence — AI record analysis',
-                  'Clients speak naturally with your assistant',
+                  'Patients speak naturally with your assistant',
                   '24/7 availability — never miss a call',
                 ].map(f => (
                   <li key={f} className="flex items-start gap-2.5 text-sm text-slate-600">
@@ -680,7 +680,7 @@ const Index = () => {
             Your intake runs while you're in session.
           </h2>
           <p className="text-lg text-white/60 max-w-xl mx-auto mb-8">
-            Stop losing prospective clients to missed calls and after-hours silence. Chat, phone, and document intake — always on, always warm, always ready.
+            Stop losing prospective patients to missed calls and after-hours silence. Chat, phone, and document intake — always on, always warm, always ready.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
