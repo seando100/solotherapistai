@@ -54,7 +54,7 @@ const Pricing = () => {
               <ul className="space-y-3 mt-6 mb-8 flex-1">
                 {STARTER_FEATURES.map((f) => (<li key={f} className="flex items-start gap-3"><Check className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" /><span className="text-sm">{f}</span></li>))}
               </ul>
-              <a href="#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">Join the Waitlist</a>
+              <a href="/#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">Join the Waitlist</a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q3 2026</p>
             </CardContent>
           </Card>
@@ -71,7 +71,7 @@ const Pricing = () => {
               <ul className="space-y-3 mb-8 flex-1">
                 {PRO_EXTRAS.map((f) => (<li key={f} className="flex items-start gap-3"><Check className="h-4 w-4 text-[#0F2745] flex-shrink-0 mt-0.5" /><span className="text-sm font-medium">{f}</span></li>))}
               </ul>
-              <a href="#waitlist" className="block w-full bg-[#0F2745] text-white text-sm font-medium px-6 py-3.5 rounded-md hover:bg-[#0C2038] transition text-center">Join the Waitlist</a>
+              <a href="/#waitlist" className="block w-full bg-[#0F2745] text-white text-sm font-medium px-6 py-3.5 rounded-md hover:bg-[#0C2038] transition text-center">Join the Waitlist</a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q3 2026</p>
             </CardContent>
           </Card>
@@ -87,7 +87,7 @@ const Pricing = () => {
               <ul className="space-y-3 mb-8 flex-1">
                 {PRO_PLUS_EXTRAS.map((f) => (<li key={f} className="flex items-start gap-3"><Check className="h-4 w-4 text-[#0F2745] flex-shrink-0 mt-0.5" /><span className="text-sm font-medium">{f}</span></li>))}
               </ul>
-              <a href="#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">Join the Waitlist</a>
+              <a href="/#waitlist" className="block w-full border border-[#0F2745] text-[#0F2745] text-sm font-medium px-6 py-3.5 rounded-md hover:bg-slate-50 transition text-center">Join the Waitlist</a>
               <p className="text-xs text-muted-foreground text-center mt-4">Coming Q3 2026</p>
             </CardContent>
           </Card>
@@ -109,7 +109,7 @@ const Pricing = () => {
         <div className="text-center mt-20">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-lg text-muted-foreground mb-8">SoloTherapistAI is coming Q3 2026. Join the waitlist to be first in line.</p>
-          <a href="#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center">Join the Waitlist <ArrowRight className="ml-2 h-4 w-4" /></a>
+          <a href="/#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center">Join the Waitlist <ArrowRight className="ml-2 h-4 w-4" /></a>
         </div>
       </div>
     </section>

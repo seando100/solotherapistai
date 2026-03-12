@@ -323,7 +323,7 @@ const Benefits = () => {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              to="#waitlist"
+              to="/#waitlist"
               className="bg-[#0F2745] text-white px-8 py-3.5 rounded-md text-sm font-semibold hover:bg-[#0C2038] transition inline-flex items-center gap-2"
             >
               Join the Waitlist

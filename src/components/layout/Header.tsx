@@ -23,7 +23,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center">
             <a
-              href="#waitlist"
+              href="/#waitlist"
               className="bg-[#0F2745] text-white text-sm px-4 py-2 rounded-md hover:bg-[#0C2038] transition"
             >
               Join the Waitlist
@@ -48,7 +48,7 @@ const Header = () => {
             <Link to="/pricing" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>Pricing</Link>
             <Link to="/faq" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>FAQ</Link>
             <a
-              href="#waitlist"
+              href="/#waitlist"
               className="bg-[#0F2745] text-white text-sm px-4 py-3 rounded-md hover:bg-[#0C2038] transition text-center"
               onClick={() => setIsOpen(false)}
             >

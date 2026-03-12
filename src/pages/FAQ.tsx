@@ -90,7 +90,7 @@ const FAQ = () => {
           <h2 className="text-2xl sm:text-3xl font-bold mb-4">Still Have Questions?</h2>
           <p className="text-lg text-muted-foreground mb-8">We're here to help.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center justify-center">Join the Waitlist</a>
+            <a href="/#waitlist" className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center justify-center">Join the Waitlist</a>
             <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-black transition-colors inline-flex items-center justify-center px-6 py-3">Contact Us</Link>
           </div>
         </div>
