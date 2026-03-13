@@ -5,7 +5,7 @@ import { MessageSquare, FileText, Sparkles, Phone, Clock, UserX, ArrowRight, Che
 // ─── Hero Illustration ────────────────────────────────────────────────────────
 
 const HeroIllustration = () => (
-  <div className="relative">
+  <div className="relative" aria-hidden="true">
     {/* Main chat panel */}
     <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200 ring-1 ring-slate-900/5 bg-slate-50">
       <div className="bg-[#0F2745] px-4 py-3 flex items-center gap-3">
@@ -14,11 +14,11 @@ const HeroIllustration = () => (
         </div>
         <div>
           <p className="text-white text-xs font-semibold leading-tight">River</p>
-          <p className="text-white/60 text-[10px] leading-tight">Calm Harbor Therapy · Intake Assistant</p>
+          <p className="text-white/75 text-[10px] leading-tight">Calm Harbor Therapy · Intake Assistant</p>
         </div>
         <div className="ml-auto flex items-center gap-1">
           <div className="w-1.5 h-1.5 rounded-full bg-pink-400" />
-          <span className="text-white/60 text-[10px]">Online</span>
+          <span className="text-white/75 text-[10px]">Online</span>
         </div>
       </div>
       <div className="px-4 py-4 space-y-3 bg-slate-50">
@@ -66,7 +66,7 @@ const HeroIllustration = () => (
       </div>
       <div className="px-3 py-3 bg-white border-t border-slate-100 flex items-center gap-2">
         <div className="flex-1 bg-slate-50 rounded-full px-4 py-2 border border-slate-200">
-          <p className="text-[11px] text-slate-400">Type your response…</p>
+          <p className="text-[11px] text-slate-500">Type your response…</p>
         </div>
         <div className="w-8 h-8 rounded-full bg-[#0F2745] flex items-center justify-center flex-shrink-0">
           <svg className="w-3.5 h-3.5 text-white fill-current" viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z" /></svg>
@@ -149,7 +149,7 @@ const Index = () => {
                   See all features →
                 </Link>
               </div>
-              <p className="mt-3 text-xs text-slate-400">Be the first to know when we launch</p>
+              <p className="mt-3 text-xs text-slate-500">Be the first to know when we launch</p>
             </div>
             <div className="relative lg:pl-8">
               <HeroIllustration />
@@ -183,7 +183,7 @@ const Index = () => {
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">Sound familiar?</h2>
-            <p className="text-lg text-white/60 max-w-2xl mx-auto">
+            <p className="text-lg text-white/75 max-w-2xl mx-auto">
               Solo therapists lose patients and burn precious energy on the same three problems every day.
             </p>
           </div>
@@ -210,11 +210,11 @@ const Index = () => {
                   <Icon className="h-5 w-5 text-white/70" />
                 </div>
                 <h3 className="text-base font-semibold text-white mb-2">{title}</h3>
-                <p className="text-sm text-white/55 leading-relaxed">{body}</p>
+                <p className="text-sm text-white/75 leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
-          <p className="text-center text-white/40 text-sm mt-10">
+          <p className="text-center text-white/65 text-sm mt-10">
             SoloTherapistAI handles all three — automatically.
           </p>
         </div>
@@ -485,7 +485,7 @@ const Index = () => {
           </div>
 
           {/* Bottom tagline + link */}
-          <p className="text-center text-sm text-slate-400 mt-14 mb-4">
+          <p className="text-center text-sm text-slate-500 mt-14 mb-4">
             The therapeutic relationship begins before the first session.
           </p>
           <div className="text-center">
@@ -589,7 +589,7 @@ const Index = () => {
               </a>
             </div>
           </div>
-          <p className="text-center text-sm text-slate-400 mt-6">
+          <p className="text-center text-sm text-slate-500 mt-6">
             All plans include a 14-day free trial. <Link to="/pricing" className="text-[#0F2745] hover:underline font-medium">Compare plans →</Link>
           </p>
         </div>
@@ -665,7 +665,7 @@ const Index = () => {
             >
               Join the Waitlist
             </button>
-            <p className="text-xs text-slate-400 text-center">
+            <p className="text-xs text-slate-500 text-center">
               We'll notify you when SoloTherapistAI launches. No spam, ever.
             </p>
           </form>
@@ -679,7 +679,7 @@ const Index = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-tight">
             Your intake runs while you're in session.
           </h2>
-          <p className="text-lg text-white/60 max-w-xl mx-auto mb-8">
+          <p className="text-lg text-white/75 max-w-xl mx-auto mb-8">
             Stop losing prospective patients to missed calls and after-hours silence. Chat, phone, and document intake — always on, always warm, always ready.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -697,7 +697,7 @@ const Index = () => {
               View pricing →
             </Link>
           </div>
-          <p className="mt-4 text-white/40 text-xs">Coming Q3 2026</p>
+          <p className="mt-4 text-white/65 text-xs">Coming Q3 2026</p>
         </div>
       </section>
     </>

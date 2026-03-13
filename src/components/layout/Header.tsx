@@ -31,9 +31,10 @@ const Header = () => {
           </div>
 
           <button
-            className="md:hidden p-2 text-gray-700 hover:text-black transition"
+            className="md:hidden p-2 text-gray-700 hover:text-black transition min-w-[44px] min-h-[44px] flex items-center justify-center"
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
