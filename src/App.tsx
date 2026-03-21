@@ -11,8 +11,6 @@ import Benefits from "./pages/Benefits";
 import Pricing from "./pages/Pricing";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
 import MarketingLayout from "./components/layout/MarketingLayout";
 import BlogList from "./pages/blog/BlogList";
 import BlogPost from "./pages/blog/BlogPost";
@@ -48,8 +46,6 @@ const App = () => (
           <Route path="/pricing" element={<MarketingLayout><Pricing /></MarketingLayout>} />
           <Route path="/faq" element={<MarketingLayout><FAQ /></MarketingLayout>} />
           <Route path="/contact" element={<MarketingLayout><Contact /></MarketingLayout>} />
-          <Route path="/privacy" element={<MarketingLayout><Privacy /></MarketingLayout>} />
-          <Route path="/terms" element={<MarketingLayout><Terms /></MarketingLayout>} />
           <Route path="/blog" element={<MarketingLayout><BlogList /></MarketingLayout>} />
           <Route path="/blog/:slug" element={<MarketingLayout><BlogPost /></MarketingLayout>} />
           <Route path="*" element={<NotFound />} />
