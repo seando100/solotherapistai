@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { BarChart3, Mail, Shield, ArrowRight, Sparkles, Phone, Upload, FileSearch, Clock, Brain } from 'lucide-react';
+import { BarChart3, Mail, Shield, ArrowRight, Sparkles, Phone, Upload, FileSearch, Clock, Brain, Link2, Rss, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BrandSettingsIllustration = () => (
@@ -634,6 +634,199 @@ const Features = () => {
           <MarketingKitIllustration />
         </div>
 
+        {/* Feature 7 — Integrations — text left, visual right */}
+        <div id="integrations" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+              Connect to the Tools You Already Use
+            </h2>
+            <p className="text-slate-600 leading-relaxed mb-6">
+              Every completed intake can automatically flow to your CRM, your spreadsheets, your project
+              management tools — wherever you need it. No copy-pasting, no manual data entry, no switching
+              between tabs.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>HubSpot CRM</strong> — connect your free HubSpot account and every intake automatically creates a contact with full details and AI context notes</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Zapier &amp; Make</strong> — add a webhook URL and every intake fires to 6,000+ apps: Google Sheets, Slack, Mailchimp, and more</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Custom webhooks</strong> — send intake data to any endpoint with HMAC-signed payloads for security</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Calendly</strong> — send one-click session invites with personalized booking links</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Connect and disconnect in seconds — no developer required</li>
+            </ul>
+          </div>
+          {/* Integrations illustration */}
+          <div className="relative">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200 ring-1 ring-slate-900/5 bg-white">
+              <div className="bg-slate-50 border-b border-slate-100 px-5 py-3 flex items-center gap-2">
+                <Link2 className="h-4 w-4 text-[#0F2745]" />
+                <p className="text-xs font-semibold text-slate-700">Integrations</p>
+              </div>
+              <div className="p-5 space-y-3">
+                <div className="flex items-center justify-between p-3 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-[#ff7a59]/10 flex items-center justify-center">
+                      <span className="text-[10px] font-bold text-[#ff7a59]">HS</span>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-800">HubSpot CRM</p>
+                      <p className="text-[10px] text-green-700">Connected · Syncing contacts</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-2 h-2 rounded-full bg-green-500" />
+                    <span className="text-[10px] font-medium text-green-700">Active</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center">
+                      <span className="text-[10px] font-bold text-purple-600">Z</span>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-800">Zapier Webhook</p>
+                      <p className="text-[10px] text-purple-700">→ Google Sheets · Last sync 2m ago</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-2 h-2 rounded-full bg-green-500" />
+                    <span className="text-[10px] font-medium text-green-700">200</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between p-3 border border-slate-200 rounded-lg">
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
+                      <span className="text-[10px] font-bold text-blue-600">Cal</span>
+                    </div>
+                    <div>
+                      <p className="text-xs font-semibold text-slate-800">Calendly</p>
+                      <p className="text-[10px] text-slate-500">Connected · Session invites</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div className="w-2 h-2 rounded-full bg-green-500" />
+                    <span className="text-[10px] font-medium text-green-700">Active</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -inset-4 bg-[#0F2745]/5 rounded-2xl blur-2xl -z-10" />
+          </div>
+        </div>
+
+        {/* Feature 8 — AI Blog Generation — visual left, text right */}
+        <div id="blog-generation" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
+          <div className="order-2 md:order-1">
+            {/* Blog illustration */}
+            <div className="relative">
+              <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200 ring-1 ring-slate-900/5 bg-white">
+                <div className="bg-slate-50 border-b border-slate-100 px-5 py-3 flex items-center gap-2">
+                  <Rss className="h-4 w-4 text-[#0F2745]" />
+                  <p className="text-xs font-semibold text-slate-700">Blog Post Generator</p>
+                </div>
+                <div className="p-5 space-y-3">
+                  <div className="bg-slate-50 border border-slate-100 rounded-lg px-3 py-2">
+                    <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-1">Topic</p>
+                    <p className="text-xs text-slate-800">5 Signs It's Time to Talk to a Therapist</p>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="bg-white border border-slate-100 rounded-lg px-3 py-2">
+                      <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-1">Generated Title</p>
+                      <p className="text-xs text-slate-800 font-medium">5 Signs It's Time to Talk to a Therapist — And Why That's a Good Thing</p>
+                    </div>
+                    <div className="bg-white border border-slate-100 rounded-lg px-3 py-2">
+                      <p className="text-[9px] font-semibold text-slate-400 uppercase tracking-widest mb-1">Social Teaser</p>
+                      <p className="text-[10px] text-slate-600">Feeling overwhelmed? You don't have to figure it out alone. Here are 5 signs it might be time to reach out. 💙 #MentalHealth #Therapy #SelfCare</p>
+                    </div>
+                    <div className="flex gap-2">
+                      <span className="text-[9px] bg-blue-50 text-blue-700 border border-blue-200 rounded-full px-2 py-0.5">mental health</span>
+                      <span className="text-[9px] bg-blue-50 text-blue-700 border border-blue-200 rounded-full px-2 py-0.5">therapy signs</span>
+                      <span className="text-[9px] bg-blue-50 text-blue-700 border border-blue-200 rounded-full px-2 py-0.5">counseling</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -inset-4 bg-[#0F2745]/5 rounded-2xl blur-2xl -z-10" />
+            </div>
+          </div>
+          <div className="order-1 md:order-2">
+            <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
+              <Rss className="h-3 w-3" />
+              Pro Plan
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+              AI Blog Posts That Bring Clients to You
+            </h2>
+            <p className="text-slate-600 leading-relaxed mb-6">
+              Generate SEO-optimized blog posts tailored to your practice, your specialties, and your
+              location — in seconds. Each post comes with a title, article, meta description, keywords,
+              and a ready-to-post social media teaser. Content marketing without the content struggle.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI-suggested topics based on your specialty and location</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full SEO-optimized article (600-800 words) with meta description and keywords</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Social media teaser ready to post on any platform</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pro: 3 posts/month · Pro+: 10 posts/month</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Copy any section with one click — paste directly to your website or social</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Feature 9 — Conversation Transcripts — text left */}
+        <div id="transcripts" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
+          <div>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+              Full Conversation History
+            </h2>
+            <p className="text-slate-600 leading-relaxed mb-6">
+              Every intake conversation — chat or phone — is preserved as a complete transcript.
+              See exactly what your client said, how the AI guided the conversation, and review
+              the full context before the session. Nothing gets lost in translation.
+            </p>
+            <ul className="space-y-2 text-sm text-slate-600">
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full chat bubble view of every conversation</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Chat and phone intake transcripts in one place</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Review before the session — see exactly what the client described</li>
+              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Source label: Web Chat vs. Phone Call</li>
+            </ul>
+          </div>
+          {/* Transcript illustration */}
+          <div className="relative">
+            <div className="rounded-xl overflow-hidden shadow-2xl border border-slate-200 ring-1 ring-slate-900/5 bg-white">
+              <div className="bg-slate-50 border-b border-slate-100 px-5 py-3 flex items-center gap-2">
+                <MessageSquare className="h-4 w-4 text-[#0F2745]" />
+                <p className="text-xs font-semibold text-slate-700">Conversation Transcript</p>
+                <span className="text-[9px] bg-blue-50 text-blue-700 border border-blue-200 rounded-full px-2 py-0.5 ml-auto font-medium">Web Chat</span>
+              </div>
+              <div className="px-5 py-4 space-y-3">
+                <div className="flex gap-2 items-start">
+                  <div className="w-5 h-5 rounded-full bg-[#0F2745]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[7px] font-bold text-[#0F2745]">AI</span>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg px-3 py-2 border border-slate-100">
+                    <p className="text-[11px] text-slate-700 leading-relaxed">"Welcome! I'm here to help gather some information for your therapist. What brings you in today?"</p>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start justify-end">
+                  <div className="bg-[#0F2745] rounded-lg px-3 py-2">
+                    <p className="text-[11px] text-white leading-relaxed">"I've been dealing with a lot of anxiety lately, especially at work. It's starting to affect my sleep."</p>
+                  </div>
+                  <div className="w-5 h-5 rounded-full bg-slate-200 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[7px] font-bold text-slate-500">C</span>
+                  </div>
+                </div>
+                <div className="flex gap-2 items-start">
+                  <div className="w-5 h-5 rounded-full bg-[#0F2745]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span className="text-[7px] font-bold text-[#0F2745]">AI</span>
+                  </div>
+                  <div className="bg-slate-50 rounded-lg px-3 py-2 border border-slate-100">
+                    <p className="text-[11px] text-slate-700 leading-relaxed">"I'm sorry to hear that. It takes courage to reach out. How long have you been experiencing these feelings?"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="absolute -inset-4 bg-[#0F2745]/5 rounded-2xl blur-2xl -z-10" />
+          </div>
+        </div>
+
         {/* Supporting features row */}
         <div className="grid sm:grid-cols-3 gap-6 mb-20 pt-4 border-t border-gray-100">
           <Card>
@@ -679,18 +872,18 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <Shield className="h-4 w-4 text-primary" />
-                Security &amp; Privacy
+                Security &amp; Data Protection
               </CardTitle>
               <CardDescription>
-                Designed with HIPAA principles in mind. Patient data is encrypted in transit and at rest.
+                Enterprise-grade security with AI-powered data boundary enforcement.
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li>• AES-256 encryption at rest, TLS in transit</li>
+                <li>• AI detects and blocks SSN, credit card, and government ID data in real time</li>
                 <li>• No human review — fully automated AI processing</li>
-                <li>• 30-day document retention with patient deletion rights</li>
-                <li>• Confidentiality and data handling notice included</li>
+                <li>• 30-day document retention with deletion rights</li>
               </ul>
             </CardContent>
           </Card>

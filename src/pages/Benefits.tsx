@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MessageSquare, FileText, Phone, ArrowRight, Briefcase, Heart, ChevronRight, Globe, Clock, Upload, Shield, Brain, Sparkles } from 'lucide-react';
+import { MessageSquare, FileText, Phone, ArrowRight, Briefcase, Heart, ChevronRight, Globe, Clock, Upload, Shield, Brain, Sparkles, Link2, Zap, Rss } from 'lucide-react';
 
 // Reusable benefit card components
 const TherapistCard = ({ title, body }: { title: string; body: string }) => (
@@ -300,6 +300,67 @@ const Benefits = () => {
                 <div>
                   <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
                   <p className="text-sm text-slate-500 leading-relaxed">Find a therapist who feels right for you — on social media, directories, and community boards. One click starts your intake journey.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* CRM Integration */}
+            <div className="bg-white rounded-xl border border-slate-200 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
+                  <Link2 className="h-5 w-5 text-[#0F2745]" />
+                </div>
+                <h3 className="text-base font-semibold">CRM Integration</h3>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Connect HubSpot (free) and every completed intake automatically creates a contact with full details and AI context notes. Zero manual data entry.</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Your therapist has your information organized and ready before your first session. Faster follow-ups, fewer repeat questions.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Zapier & Webhooks */}
+            <div className="bg-white rounded-xl border border-slate-200 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
+                  <Zap className="h-5 w-5 text-[#0F2745]" />
+                </div>
+                <h3 className="text-base font-semibold">Zapier &amp; Webhooks</h3>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Send intake data to Google Sheets, Slack, Mailchimp, or any of 6,000+ apps automatically. Build the workflow that fits your practice.</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Your submission triggers the right actions immediately — appointment scheduling, welcome emails, or follow-up reminders — without anyone manually pushing buttons.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* AI Blog Posts */}
+            <div className="bg-white rounded-xl border border-slate-200 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
+                  <Rss className="h-5 w-5 text-[#0F2745]" />
+                </div>
+                <h3 className="text-base font-semibold">AI Blog Generation</h3>
+                <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro</span>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Generate SEO-optimized blog posts tailored to your specialties and location. Each post comes with title, article, keywords, and a social media teaser — content marketing without the struggle.</p>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">Find helpful, expert mental health content from a local therapist you can trust — not generic internet advice. When you're ready, your therapist is one click away.</p>
                 </div>
               </div>
             </div>
