@@ -220,15 +220,31 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4">11. International Users</h2>
+            <h2 className="text-2xl font-semibold mb-4">11. International Users and Data Transfers</h2>
             <p className="text-muted-foreground mb-4">
-              SoloSolutionsAI is currently operated from and hosted in the United States. All data is stored and processed in the United States. If you access the Service from outside the United States, please be aware that your information will be transferred to, stored, and processed in the United States.
+              SoloSolutionsAI is operated by SPD Digital Consulting LLC, based in the United States. All data is currently stored and processed in the United States (AWS US-East-1 region via Supabase).
+            </p>
+
+            <h3 className="text-xl font-semibold mb-2">11.1 United Kingdom</h3>
+            <p className="text-muted-foreground mb-4">
+              For users in the United Kingdom, personal data is transferred to the United States under the UK-US Data Bridge framework, which provides adequate safeguards for the transfer of personal data from the UK to certified US organizations. We process personal data based on: (a) contractual necessity — to provide the Service you have requested; (b) legitimate interests — to operate, maintain, and improve our platform; or (c) your explicit consent.
             </p>
             <p className="text-muted-foreground mb-4">
-              <strong>GDPR (EU/UK):</strong> For users in the European Economic Area or United Kingdom, we process personal data based on: (a) contractual necessity — to provide the Service you have requested; (b) legitimate interests — to operate and improve our platform; or (c) your explicit consent. You have the right to lodge a complaint with your local data protection authority. EU/UK-specific data residency options may be offered in the future.
+              Your rights under UK GDPR include: access, rectification, erasure, restriction of processing, data portability, objection to processing, and the right to lodge a complaint with the Information Commissioner's Office (ICO) at <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ico.org.uk</a>.
             </p>
+
+            <h3 className="text-xl font-semibold mb-2">11.2 European Economic Area</h3>
+            <p className="text-muted-foreground mb-4">
+              For users in the EEA, personal data is transferred to the United States under the EU-US Data Privacy Framework. You have the right to lodge a complaint with your local data protection authority. The same lawful bases and data subject rights described in Section 11.1 apply.
+            </p>
+
+            <h3 className="text-xl font-semibold mb-2">11.3 Data Residency</h3>
+            <p className="text-muted-foreground mb-4">
+              All data is currently stored in the United States. We are evaluating regional data residency options (including UK-based storage) for future availability. If you have specific data residency requirements, please contact us at <a href="mailto:privacy@solosolutionsai.com" className="text-primary hover:underline">privacy@solosolutionsai.com</a>.
+            </p>
+
             <p className="text-muted-foreground">
-              By using the Service, you consent to the transfer and processing of your information in the United States in accordance with this Privacy Policy.
+              By using the Service, you acknowledge and consent to the transfer and processing of your information in the United States in accordance with this Privacy Policy and applicable data transfer frameworks.
             </p>
           </section>
 
