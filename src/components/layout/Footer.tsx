@@ -20,8 +20,8 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <a href="https://app.solosolutionsai.com/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">Privacy</a>
-            <a href="https://app.solosolutionsai.com/terms" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">Terms</a>
+            <Link to="/privacy" className="text-sm text-gray-600 hover:text-black transition-colors">Privacy</Link>
+            <Link to="/terms" className="text-sm text-gray-600 hover:text-black transition-colors">Terms</Link>
             <Link to="/contact" className="text-sm text-gray-600 hover:text-black transition-colors">Contact</Link>
           </div>
         </div>
