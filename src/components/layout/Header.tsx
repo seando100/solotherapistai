@@ -19,6 +19,7 @@ const Header = () => {
             <Link to="/benefits" className="hover:text-black transition-colors">Benefits</Link>
             <Link to="/pricing" className="hover:text-black transition-colors">Pricing</Link>
             <Link to="/faq" className="hover:text-black transition-colors">FAQ</Link>
+            <Link to="/blog" className="hover:text-black transition-colors">Blog</Link>
           </nav>
 
           <div className="hidden md:flex items-center">
@@ -48,6 +49,7 @@ const Header = () => {
             <Link to="/benefits" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>Benefits</Link>
             <Link to="/pricing" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>Pricing</Link>
             <Link to="/faq" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>FAQ</Link>
+            <Link to="/blog" className="text-sm text-gray-700 hover:text-black transition-colors py-1" onClick={() => setIsOpen(false)}>Blog</Link>
             <a
               href="/#waitlist"
               className="bg-[#0F2745] text-white text-sm px-4 py-3 rounded-md hover:bg-[#0C2038] transition text-center"
