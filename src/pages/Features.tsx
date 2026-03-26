@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { BarChart3, Mail, Shield, ArrowRight, Sparkles, Phone, Upload, FileSearch, Clock, Brain, Link2, Rss, MessageSquare } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const BrandSettingsIllustration = () => (
   <div className="relative">
@@ -299,6 +300,7 @@ const MarketingKitIllustration = () => (
 );
 
 const Features = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
@@ -306,10 +308,10 @@ const Features = () => {
         {/* Page header */}
         <div className="text-center mb-20">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Built for the Solo Therapist
+            {t('features.title')}
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need to welcome new patients — without adding overhead or hiring staff.
+            {t('features.subtitle')}
           </p>
         </div>
 
@@ -317,20 +319,15 @@ const Features = () => {
         <div id="ai-intake" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Intake That Feels Like a Conversation
+              {t('features.intake.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Patients share their presenting concerns through a warm, conversational AI — in English or Spanish.
-              No clinical jargon, no overwhelming forms. You get the details you need, and they feel heard from the very first interaction.
+              {t('features.intake.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Warm conversational AI chat mode and structured form mode</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Give your AI assistant a name — patients meet "River" or "Haven," not a generic chatbot</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Bilingual — patients choose English or Spanish at the start</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Fully customizable intake questions tailored to your specialty</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your confidentiality notice presented to every patient before they begin</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your logo, practice name, and greeting — patients never see SoloTherapistAI</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Crisis detection: surfaces 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when needed</li>
+              {[0,1,2,3,4,5,6].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.intake.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
           <ChatModeScreenshot />
@@ -390,22 +387,18 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Phone className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.phone.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Phone Intake — 24/7
+              {t('features.phone.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Give your practice a dedicated phone number where callers speak naturally with your AI
-              assistant. A warm, professional conversation that captures every detail — no hold music,
-              no phone trees, no missed connections with people who need support.
+              {t('features.phone.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Dedicated local phone number for your practice</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Callers speak naturally — your AI assistant guides the conversation warmly</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Same structured summary, AI clinical notes, and email notifications</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Available 24/7 — never miss an after-hours or weekend call</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Intake source clearly labeled (Web Chat vs. Phone Call) in your portal</li>
+              {[0,1,2,3,4].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.phone.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -414,19 +407,15 @@ const Features = () => {
         <div id="session-prep" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Prepare for Every First Session
+              {t('features.sessionPrep.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every submission arrives with a structured patient summary and AI-generated session prep notes
-              — flagging comorbidity indicators, treatment history patterns, and
-              suggested therapeutic approaches — so you're prepared the moment you sit down together.
+              {t('features.sessionPrep.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Organized patient profile: name, contact, location, and presenting concerns</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI clinical notes — comorbidity flags, risk indicators, and therapeutic suggestions — for your eyes only</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Suggested first-session focus areas tailored to the presenting concern</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Delivered to your inbox the moment intake is submitted</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Patient receives a warm, branded confirmation with their submission summary</li>
+              {[0,1,2,3,4].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.sessionPrep.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
           <IntakeSummaryScreenshot />
@@ -474,23 +463,18 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Upload className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.docIntel.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Documents In, Insights Out
+              {t('features.docIntel.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Request insurance forms, referral letters, prior treatment records, and medication lists from patients with one click.
-              AI recommends what to ask for based on the presenting concerns, patients upload securely, and every document is
-              automatically analyzed — key dates, findings, and clinically relevant highlights — ready for your review.
+              {t('features.docIntel.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI recommends documents based on specialty and presenting concerns</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Patients upload securely via a branded, encrypted portal</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI extracts key dates, findings, and clinically relevant highlights from each document</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Handles PDFs, images, scanned documents, and Word files</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> 30-day secure retention — pass-through, not a vault</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> No human ever views patient documents — fully automated</li>
+              {[0,1,2,3,4,5].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.docIntel.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -500,23 +484,18 @@ const Features = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Brain className="h-3 w-3" />
-              Pro+ Plan
+              {t('features.intel.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Intelligence Brief
+              {t('features.intel.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the patient shared.
-              The Intelligence Brief identifies comorbidity indicators, treatment history patterns, risk factors,
-              and suggests therapeutic considerations — so you walk into
-              every first session with the clinical preparation of a specialist.
+              {t('features.intel.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Comorbidity screening flags — alerts when symptoms suggest co-occurring conditions</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Treatment history pattern analysis with continuity-of-care insights</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Risk indicator identification with suggested safety planning considerations</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Suggested therapeutic approaches tailored to the presenting concern profile</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Delivered alongside the intake summary — no extra step required</li>
+              {[0,1,2,3,4].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.intel.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
           {/* Intelligence Brief illustration */}
@@ -589,20 +568,15 @@ const Features = () => {
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Your Brand, Your Link
+              {t('features.brand.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Patients never see "SoloTherapistAI." They see your practice name, your logo, and your intake
-              page — at a URL you control. Every detail is configurable from your admin portal,
-              and when they're ready for their first session, send a one-click scheduling invite.
+              {t('features.brand.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Your own vanity URL (e.g. solotherapistai.com/yourpractice)</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Upload your practice logo — shown on every patient-facing screen and email</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Set your assistant's name, patient greeting, and specialty focus</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Configure confidentiality notices in English and Spanish</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pause intake instantly with a custom unavailability message</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Send session invites via Calendly or any scheduling link</li>
+              {[0,1,2,3,4,5].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.brand.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -612,23 +586,18 @@ const Features = () => {
           <div>
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Sparkles className="h-3 w-3" />
-              Pro Plan
+              {t('features.marketingKit.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Grow Your Practice Visibility
+              {t('features.marketingKit.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              The Marketing Kit generates platform-ready social media posts and professionally branded
-              visual cards in seconds — tailored to your practice, your specialties, and your intake link.
-              Share mental health awareness content, self-care tips, and practice updates effortlessly.
+              {t('features.marketingKit.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI-written post copy for Facebook, Instagram, LinkedIn, and Psychology Today</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Branded visual cards pre-sized for every platform — download as PNG, ready to upload</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Edit the card headline (AI-suggested, fully customizable) to match your voice</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> 5 color themes — or use your brand color pulled automatically from your logo</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Website banner sizes included for your practice website or Psychology Today profile</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Generate in English or Spanish — bilingual from the start</li>
+              {[0,1,2,3,4,5].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.marketingKit.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
           <MarketingKitIllustration />
@@ -638,19 +607,15 @@ const Features = () => {
         <div id="integrations" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Connect to the Tools You Already Use
+              {t('features.integrations.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every completed intake can automatically flow to your CRM, your spreadsheets, your project
-              management tools — wherever you need it. No copy-pasting, no manual data entry, no switching
-              between tabs.
+              {t('features.integrations.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>HubSpot CRM</strong> — connect your free HubSpot account and every intake automatically creates a contact with full details and AI context notes</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Zapier &amp; Make</strong> — add a webhook URL and every intake fires to 6,000+ apps: Google Sheets, Slack, Mailchimp, and more</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Custom webhooks</strong> — send intake data to any endpoint with HMAC-signed payloads for security</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <strong>Calendly</strong> — send one-click session invites with personalized booking links</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Connect and disconnect in seconds — no developer required</li>
+              {[0,1,2,3,4].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> <span dangerouslySetInnerHTML={{ __html: t(`features.integrations.items.${i}`) }} /></li>
+              ))}
             </ul>
           </div>
           {/* Integrations illustration */}
@@ -750,22 +715,18 @@ const Features = () => {
           <div className="order-1 md:order-2">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#0F2745] bg-[#0F2745]/8 px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
               <Rss className="h-3 w-3" />
-              Pro Plan
+              {t('features.blog.badge')}
             </div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              AI Blog Posts That Bring Clients to You
+              {t('features.blog.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Generate SEO-optimized blog posts tailored to your practice, your specialties, and your
-              location — in seconds. Each post comes with a title, article, meta description, keywords,
-              and a ready-to-post social media teaser. Content marketing without the content struggle.
+              {t('features.blog.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> AI-suggested topics based on your specialty and location</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full SEO-optimized article (600-800 words) with meta description and keywords</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Social media teaser ready to post on any platform</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Pro: 3 posts/month · Pro+: 10 posts/month</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Copy any section with one click — paste directly to your website or social</li>
+              {[0,1,2,3,4].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.blog.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -774,18 +735,15 @@ const Features = () => {
         <div id="transcripts" className="grid md:grid-cols-2 gap-12 items-center mb-24 scroll-mt-24">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Full Conversation History
+              {t('features.transcripts.title')}
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
-              Every intake conversation — chat or phone — is preserved as a complete transcript.
-              See exactly what your client said, how the AI guided the conversation, and review
-              the full context before the session. Nothing gets lost in translation.
+              {t('features.transcripts.desc')}
             </p>
             <ul className="space-y-2 text-sm text-slate-600">
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Full chat bubble view of every conversation</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Chat and phone intake transcripts in one place</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Review before the session — see exactly what the client described</li>
-              <li className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> Source label: Web Chat vs. Phone Call</li>
+              {[0,1,2,3].map(i => (
+                <li key={i} className="flex items-start gap-2"><span className="text-[#0F2745] font-bold mt-0.5">—</span> {t(`features.transcripts.items.${i}`)}</li>
+              ))}
             </ul>
           </div>
           {/* Transcript illustration */}
@@ -833,18 +791,17 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <BarChart3 className="h-4 w-4 text-primary" />
-                Admin Portal
+                {t('features.admin.title')}
               </CardTitle>
               <CardDescription>
-                Review every submission, track status, manage documents, and organize your patient pipeline in one place.
+                {t('features.admin.desc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• Color-coded submission aging and triage</li>
-                <li>• Status workflow (new → scheduled → in treatment)</li>
-                <li>• Document request and review dashboard</li>
-                <li>• Chat and phone intake unified view</li>
+                {[0,1,2,3].map(i => (
+                  <li key={i}>• {t(`features.admin.items.${i}`)}</li>
+                ))}
               </ul>
             </CardContent>
           </Card>
@@ -853,17 +810,17 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <Mail className="h-4 w-4 text-primary" />
-                Email Notifications
+                {t('features.email.title')}
               </CardTitle>
               <CardDescription>
-                You and your patient both get a confirmation the moment an intake is submitted.
+                {t('features.email.desc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• Instant therapist alert email</li>
-                <li>• Warm, professional patient confirmation</li>
-                <li>• Branded with your practice identity</li>
+                {[0,1,2].map(i => (
+                  <li key={i}>• {t(`features.email.items.${i}`)}</li>
+                ))}
               </ul>
             </CardContent>
           </Card>
@@ -872,18 +829,17 @@ const Features = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-base">
                 <Shield className="h-4 w-4 text-primary" />
-                Security &amp; Data Protection
+                {t('features.security.title')}
               </CardTitle>
               <CardDescription>
-                Enterprise-grade security with AI-powered data boundary enforcement.
+                {t('features.security.desc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <ul className="space-y-1.5 text-sm text-muted-foreground">
-                <li>• AES-256 encryption at rest, TLS in transit</li>
-                <li>• AI detects and blocks SSN, credit card, and government ID data in real time</li>
-                <li>• No human review — fully automated AI processing</li>
-                <li>• 30-day document retention with deletion rights</li>
+                {[0,1,2,3].map(i => (
+                  <li key={i}>• {t(`features.security.items.${i}`)}</li>
+                ))}
               </ul>
             </CardContent>
           </Card>
@@ -891,23 +847,23 @@ const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4">Ready to Transform Your Practice?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4">{t('features.cta.title')}</h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Coming Q3 2026.
+            {t('features.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="/#waitlist"
               className="bg-[#0F2745] text-white px-6 py-3 rounded-md text-sm font-medium hover:bg-[#0C2038] transition inline-flex items-center justify-center"
             >
-              Join the Waitlist
+              {t('features.cta.joinWaitlist')}
               <ArrowRight className="ml-2 h-4 w-4" />
             </a>
             <Link
               to="/pricing"
               className="text-sm font-medium text-gray-700 hover:text-black transition-colors inline-flex items-center justify-center px-6 py-3"
             >
-              View Pricing
+              {t('features.cta.viewPricing')}
             </Link>
           </div>
         </div>

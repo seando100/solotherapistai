@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-gray-100 bg-white mt-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
@@ -16,22 +19,22 @@ const Footer = () => {
                 Solo<span className="text-[#EC4899]">Therapist</span>AI
               </span>
             </div>
-            <p className="text-sm text-gray-500 mt-1">AI-powered patient intake for mental health professionals.</p>
+            <p className="text-sm text-gray-500 mt-1">{t('footer.tagline')}</p>
           </div>
 
           <div className="flex items-center space-x-6">
-            <Link to="/privacy" className="text-sm text-gray-600 hover:text-black transition-colors">Privacy</Link>
-            <Link to="/terms" className="text-sm text-gray-600 hover:text-black transition-colors">Terms</Link>
-            <Link to="/contact" className="text-sm text-gray-600 hover:text-black transition-colors">Contact</Link>
+            <Link to="/privacy" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.privacy')}</Link>
+            <Link to="/terms" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.terms')}</Link>
+            <Link to="/contact" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.contact')}</Link>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mt-8">
           <p className="text-xs text-gray-400">
-            &copy; {new Date().getFullYear()} SoloSolutionsAI. All rights reserved.
+            &copy; {new Date().getFullYear()} {t('footer.copyright')}
           </p>
           <a href="https://www.solosolutionsai.com" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
-            A SoloSolutionsAI Product
+            {t('footer.product')}
           </a>
         </div>
       </div>

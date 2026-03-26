@@ -1,27 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { MessageSquare, FileText, Phone, ArrowRight, Briefcase, Heart, ChevronRight, Globe, Clock, Upload, Shield, Brain, Sparkles, Link2, Zap, Rss } from 'lucide-react';
 
 // Reusable benefit card components
-const TherapistCard = ({ title, body }: { title: string; body: string }) => (
+const TherapistCard = ({ title, body, label }: { title: string; body: string; label: string }) => (
   <div className="bg-white border border-slate-200 rounded-xl p-5 max-w-sm w-full shadow-sm">
     <div className="flex items-center gap-3 mb-2">
       <div className="w-8 h-8 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
         <Briefcase className="h-4 w-4 text-[#0F2745]" />
       </div>
-      <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">For You</span>
+      <span className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider">{label}</span>
     </div>
     <p className="text-sm font-semibold text-slate-800 mb-1">{title}</p>
     <p className="text-sm text-slate-500 leading-relaxed">{body}</p>
   </div>
 );
 
-const ClientCard = ({ title, body }: { title: string; body: string }) => (
+const ClientCard = ({ title, body, label }: { title: string; body: string; label: string }) => (
   <div className="bg-white border border-slate-200 rounded-xl p-5 max-w-sm w-full shadow-sm">
     <div className="flex items-center gap-3 mb-2">
       <div className="w-8 h-8 rounded-lg bg-pink-50 flex items-center justify-center flex-shrink-0">
         <Heart className="h-4 w-4 text-pink-600" />
       </div>
-      <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">For Patients</span>
+      <span className="text-xs font-semibold text-pink-600 uppercase tracking-wider">{label}</span>
     </div>
     <p className="text-sm font-semibold text-slate-800 mb-1">{title}</p>
     <p className="text-sm text-slate-500 leading-relaxed">{body}</p>
@@ -39,17 +40,17 @@ const StepIcon = ({ icon: Icon, label, showLine = true }: { icon: React.ElementT
 );
 
 const Benefits = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* ── Hero ── */}
       <section className="pt-16 md:pt-24 pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Better for You. Better for Patients.
+            {t('benefits.hero.title')}
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            When your intake runs smarter, everyone wins. You reclaim your time between sessions and walk into every
-            first meeting prepared. Your patients feel heard, supported, and cared for — from the very first interaction.
+            {t('benefits.hero.subtitle')}
           </p>
         </div>
       </section>
@@ -58,9 +59,9 @@ const Benefits = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">The Intake Journey</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">{t('benefits.journey.title')}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Follow a patient from first contact to first session — and see how every step creates value for both sides.
+              {t('benefits.journey.subtitle')}
             </p>
           </div>
 
@@ -69,60 +70,68 @@ const Benefits = () => {
             {/* Step 1: Patient Reaches Out */}
             <div className="flex md:justify-end">
               <TherapistCard
-                title="Never miss a new patient"
-                body="Intake runs 24/7 — nights, weekends, holidays. Every person who reaches out is captured the moment they find the courage to take that first step. No more lost connections to voicemail or after-hours silence."
+                label={t('benefits.forYou')}
+                title={t('benefits.step1.you.title')}
+                body={t('benefits.step1.you.body')}
               />
             </div>
-            <StepIcon icon={Phone} label="Patient Reaches Out" />
+            <StepIcon icon={Phone} label={t('benefits.step1.label')} />
             <div className="flex md:justify-start">
               <ClientCard
-                title="Get a caring response the moment you're ready"
-                body="No voicemail, no waiting until Monday. Reach out at midnight when the weight feels heaviest and get an immediate, warm, judgment-free response. Your healing journey starts on your schedule."
+                label={t('benefits.forPatients')}
+                title={t('benefits.step1.patient.title')}
+                body={t('benefits.step1.patient.body')}
               />
             </div>
 
             {/* Step 2: AI Conversation */}
             <div className="flex md:justify-end">
               <TherapistCard
-                title="Every detail captured with care"
-                body="Structured intake with all the information you need — no rushed intake calls between sessions, no missed details, no 20-minute screening calls. Every answer organized and ready for review."
+                label={t('benefits.forYou')}
+                title={t('benefits.step2.you.title')}
+                body={t('benefits.step2.you.body')}
               />
             </div>
-            <StepIcon icon={MessageSquare} label="AI Conversation" />
+            <StepIcon icon={MessageSquare} label={t('benefits.step2.label')} />
             <div className="flex md:justify-start">
               <ClientCard
-                title="Share your story in a safe, unhurried space"
-                body="No intimidating forms or clinical jargon. A warm, empathetic conversation that feels safe — in English or Spanish. Share what you're going through at your own pace, in your own words."
+                label={t('benefits.forPatients')}
+                title={t('benefits.step2.patient.title')}
+                body={t('benefits.step2.patient.body')}
               />
             </div>
 
             {/* Step 3: Therapist Reviews */}
             <div className="flex md:justify-end">
               <TherapistCard
-                title="Walk into every first session fully prepared"
-                body="AI-generated session prep with comorbidity flags, treatment history patterns, and suggested therapeutic approaches — before you ever sit down together. Know the person, the concerns, and the right starting point."
+                label={t('benefits.forYou')}
+                title={t('benefits.step3.you.title')}
+                body={t('benefits.step3.you.body')}
               />
             </div>
-            <StepIcon icon={FileText} label="Therapist Reviews" />
+            <StepIcon icon={FileText} label={t('benefits.step3.label')} />
             <div className="flex md:justify-start">
               <ClientCard
-                title="Your therapist already understands your situation"
-                body="No repeating yourself. No starting from zero. Your first real conversation starts where it should — with understanding, connection, and a plan for moving forward together."
+                label={t('benefits.forPatients')}
+                title={t('benefits.step3.patient.title')}
+                body={t('benefits.step3.patient.body')}
               />
             </div>
 
             {/* Step 4: First Session */}
             <div className="flex md:justify-end">
               <TherapistCard
-                title="More time for what matters"
-                body="Spend your session on therapeutic work and building rapport — not gathering demographics or walking through the same screening questions. Focus on what you became a therapist to do."
+                label={t('benefits.forYou')}
+                title={t('benefits.step4.you.title')}
+                body={t('benefits.step4.you.body')}
               />
             </div>
-            <StepIcon icon={ChevronRight} label="First Session" showLine={false} />
+            <StepIcon icon={ChevronRight} label={t('benefits.step4.label')} showLine={false} />
             <div className="flex md:justify-start">
               <ClientCard
-                title="A faster path to feeling better"
-                body="From 'I need to talk to someone' to a meaningful first session — faster and more comfortably than you thought possible. The depth of a specialist with the personal warmth of someone who truly cares."
+                label={t('benefits.forPatients')}
+                title={t('benefits.step4.patient.title')}
+                body={t('benefits.step4.patient.body')}
               />
             </div>
           </div>
@@ -133,9 +142,9 @@ const Benefits = () => {
       <section className="py-16 md:py-24 bg-slate-50 border-y border-slate-100">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-14">
-            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">Every Feature, Two Winners</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-3">{t('benefits.additional.title')}</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Beyond the intake journey, every capability in SoloTherapistAI creates a ripple effect — making your practice more efficient and your patients' experience more supportive and professional.
+              {t('benefits.additional.subtitle')}
             </p>
           </div>
 
@@ -146,16 +155,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Globe className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Bilingual Intake</h3>
+                <h3 className="text-base font-semibold">{t('benefits.bilingual.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Serve Spanish-speaking patients without hiring bilingual staff or paying for interpreter services. Expand your practice reach.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.bilingual.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Communicate in the language you're most comfortable in — sharing vulnerable feelings is hard enough without a language barrier.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.bilingual.patient')}</p>
                 </div>
               </div>
             </div>
@@ -166,17 +175,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Phone className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Phone Intake</h3>
+                <h3 className="text-base font-semibold">{t('benefits.phoneIntake.title')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">A dedicated phone line that handles intake calls 24/7. Same structured summary, zero phone tag between sessions.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.phoneIntake.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Prefer talking over typing? Call anytime and speak naturally about what you're going through — no hold music, no phone trees.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.phoneIntake.patient')}</p>
                 </div>
               </div>
             </div>
@@ -187,17 +196,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Upload className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Document Intelligence</h3>
+                <h3 className="text-base font-semibold">{t('benefits.docIntel.title')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">AI analyzes uploaded insurance forms, referral letters, prior treatment records, and medication lists — extracting key details and clinical highlights before you review.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.docIntel.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">A simple, secure way to share what's needed. Clear checklist, encrypted upload, no confusion about what to bring.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.docIntel.patient')}</p>
                 </div>
               </div>
             </div>
@@ -208,16 +217,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Clock className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Crisis Detection & Safety</h3>
+                <h3 className="text-base font-semibold">{t('benefits.crisis.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Built-in crisis detection surfaces the 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when language indicates acute distress. Risk indicators flagged in your summary.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crisis.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">If you're in crisis, you'll be immediately connected to trained professionals who can help right now — 988 Suicide & Crisis Lifeline, available 24/7.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crisis.patient')}</p>
                 </div>
               </div>
             </div>
@@ -228,16 +237,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Shield className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Privacy & Security</h3>
+                <h3 className="text-base font-semibold">{t('benefits.security.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Designed with HIPAA principles in mind. End-to-end encryption, confidentiality protections, and 30-day document retention with deletion rights.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.security.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Everything you share is treated with the same confidentiality as an in-person conversation. Fully encrypted, fully automated — no human sees your data.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.security.patient')}</p>
                 </div>
               </div>
             </div>
@@ -248,16 +257,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <MessageSquare className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Website Widget</h3>
+                <h3 className="text-base font-semibold">{t('benefits.widget.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">One line of code embeds intake directly on your WordPress or any website. Capture prospective patients where they already are.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.widget.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Start your intake without leaving your therapist's website. No new tabs, no separate portals — just a welcoming conversation right where you are.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.widget.patient')}</p>
                 </div>
               </div>
             </div>
@@ -268,17 +277,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Brain className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Intelligence Brief</h3>
+                <h3 className="text-base font-semibold">{t('benefits.intel.title')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro+</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Every intake generates a deep-dive analysis — comorbidity flags, treatment history patterns, risk indicators, and suggested therapeutic approaches for the first session.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.intel.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your therapist spots patterns and concerns you might not have connected yourself — not just what you came in for, but the full picture of what's affecting your wellbeing.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.intel.patient')}</p>
                 </div>
               </div>
             </div>
@@ -289,17 +298,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Sparkles className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Marketing Kit</h3>
+                <h3 className="text-base font-semibold">{t('benefits.marketingKit.title')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Generate branded social posts and visual cards for Facebook, Instagram, LinkedIn, and Psychology Today in seconds — no designer, no copywriter needed.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.marketingKit.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Find a therapist who feels right for you — on social media, directories, and community boards. One click starts your intake journey.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.marketingKit.patient')}</p>
                 </div>
               </div>
             </div>
@@ -310,16 +319,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Link2 className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">CRM Integration</h3>
+                <h3 className="text-base font-semibold">{t('benefits.crm.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Connect HubSpot (free) and every completed intake automatically creates a contact with full details and AI context notes. Zero manual data entry.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crm.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your therapist has your information organized and ready before your first session. Faster follow-ups, fewer repeat questions.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.crm.patient')}</p>
                 </div>
               </div>
             </div>
@@ -330,16 +339,16 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Zap className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">Zapier &amp; Webhooks</h3>
+                <h3 className="text-base font-semibold">{t('benefits.zapier.title')}</h3>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Send intake data to Google Sheets, Slack, Mailchimp, or any of 6,000+ apps automatically. Build the workflow that fits your practice.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.zapier.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Your submission triggers the right actions immediately — appointment scheduling, welcome emails, or follow-up reminders — without anyone manually pushing buttons.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.zapier.patient')}</p>
                 </div>
               </div>
             </div>
@@ -350,17 +359,17 @@ const Benefits = () => {
                 <div className="w-10 h-10 rounded-lg bg-[#0F2745]/8 flex items-center justify-center flex-shrink-0">
                   <Rss className="h-5 w-5 text-[#0F2745]" />
                 </div>
-                <h3 className="text-base font-semibold">AI Blog Generation</h3>
+                <h3 className="text-base font-semibold">{t('benefits.blogGen.title')}</h3>
                 <span className="text-[10px] font-semibold text-[#0F2745] bg-[#0F2745]/8 px-2 py-0.5 rounded-full uppercase tracking-wide">Pro</span>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">For You</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Generate SEO-optimized blog posts tailored to your specialties and location. Each post comes with title, article, keywords, and a social media teaser — content marketing without the struggle.</p>
+                  <p className="text-xs font-semibold text-[#0F2745] uppercase tracking-wider mb-1">{t('benefits.forYou')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.blogGen.you')}</p>
                 </div>
                 <div>
-                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">For Patients</p>
-                  <p className="text-sm text-slate-500 leading-relaxed">Find helpful, expert mental health content from a local therapist you can trust — not generic internet advice. When you're ready, your therapist is one click away.</p>
+                  <p className="text-xs font-semibold text-pink-600 uppercase tracking-wider mb-1">{t('benefits.forPatients')}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{t('benefits.blogGen.patient')}</p>
                 </div>
               </div>
             </div>
@@ -372,32 +381,30 @@ const Benefits = () => {
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-            The Real Difference
+            {t('benefits.bottomLine.title')}
           </h2>
           <p className="text-lg text-slate-600 leading-relaxed mb-8">
-            Solo therapists don't have intake coordinators, front-desk staff, or 24/7 answering services.
-            Your patients don't know that — and with SoloTherapistAI, they'll never need to. Every interaction
-            feels like a well-staffed practice with the personal depth and warmth only a solo practitioner can provide.
+            {t('benefits.bottomLine.body')}
           </p>
           <p className="text-sm text-slate-400 mb-10">
-            The therapeutic relationship begins before the first session.
+            {t('benefits.bottomLine.tagline')}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/#waitlist"
               className="bg-[#0F2745] text-white px-8 py-3.5 rounded-md text-sm font-semibold hover:bg-[#0C2038] transition inline-flex items-center gap-2"
             >
-              Join the Waitlist
+              {t('benefits.bottomLine.cta')}
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               to="/features"
               className="text-sm font-medium text-slate-500 hover:text-slate-900 transition"
             >
-              See all features →
+              {t('benefits.bottomLine.seeFeatures')}
             </Link>
           </div>
-          <p className="mt-3 text-xs text-slate-400">14-day free trial · Cancel anytime</p>
+          <p className="mt-3 text-xs text-slate-400">{t('benefits.bottomLine.trial')}</p>
         </div>
       </section>
     </>

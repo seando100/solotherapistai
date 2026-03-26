@@ -1,18 +1,25 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  titleEs?: string;
   excerpt: string;
+  excerptEs?: string;
   category: string;
+  categoryEs?: string;
   date: string;
   content: string;
+  contentEs?: string;
 }
 
 export const blogPosts: BlogPost[] = [
   {
     slug: "therapist-in-session-cant-answer-phone",
     title: "You're In Session All Day. Who's Answering the Phone?",
+    titleEs: "Usted Está en Sesión Todo el Día. ¿Quién Contesta el Teléfono?",
     excerpt: "Therapists have an ethical obligation to be fully present with clients. That same obligation makes it structurally impossible to respond to new inquiries — and it's costing you clients who need help.",
+    excerptEs: "Los terapeutas tienen la obligación ética de estar completamente presentes con sus pacientes. Esa misma obligación hace estructuralmente imposible responder a nuevas consultas — y le está costando pacientes que necesitan ayuda.",
     category: "Practice Management",
+    categoryEs: "Gestión del Consultorio",
     date: "March 21, 2026",
     content: `
 <p>It's 2:15 PM on a Wednesday. You're in session with a client who is finally opening up about something they've been circling for weeks. Your phone — silenced, in another room, as it should be — receives two calls and a voicemail. One is a potential client who spent three days building up the courage to reach out for therapy. They got your voicemail. They hung up without leaving a message.</p>
@@ -54,8 +61,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "therapy-clients-lost-between-courage-and-contact",
     title: "The Clients You Lose Between Courage and Contact",
+    titleEs: "Los Pacientes que Pierde Entre el Valor y el Contacto",
     excerpt: "Reaching out for therapy takes immense courage. When that courage meets a voicemail or a contact form, many people give up entirely. Here's the invisible leak in every solo practice.",
+    excerptEs: "Comunicarse para buscar terapia requiere un valor inmenso. Cuando ese valor se encuentra con un buzón de voz o un formulario de contacto, muchas personas se rinden por completo. Esta es la fuga invisible en cada consultorio independiente.",
     category: "Client Onboarding",
+    categoryEs: "Admisión de Pacientes",
     date: "March 21, 2026",
     content: `
 <p>Think about what it takes for someone to contact a therapist for the first time. Weeks — sometimes months — of thinking about it. Overcoming stigma, self-doubt, financial concerns, and the vulnerability of admitting they need help. They finally open their laptop at 10 PM on a Thursday, search for a therapist who specializes in what they're dealing with, and find your website.</p>
@@ -102,8 +112,11 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "therapist-sole-proprietor-growth-without-burnout",
     title: "Growing Your Therapy Practice Without Burning Out: The Sole Proprietor's Guide",
+    titleEs: "Cómo Hacer Crecer Su Consultorio de Terapia Sin Agotarse: Guía para el Profesional Independiente",
     excerpt: "More clients means more income — but for solo therapists, it also means more phone tag, more intake calls, and more admin hours. Here's how to grow without drowning.",
+    excerptEs: "Más pacientes significa más ingresos — pero para terapeutas independientes, también significa más juego de llamadas, más llamadas de admisión y más horas administrativas. Así es cómo crecer sin ahogarse.",
     category: "Small Business Growth",
+    categoryEs: "Crecimiento del Consultorio",
     date: "March 21, 2026",
     content: `
 <p>You became a therapist to help people. You started a private practice for autonomy, flexibility, and the chance to do deeply meaningful work on your own terms. But somewhere along the way, "private practice" became a second full-time job — one that involves voicemails, insurance verification, intake paperwork, scheduling conflicts, and the constant low-grade anxiety of wondering whether your caseload will be full next month.</p>

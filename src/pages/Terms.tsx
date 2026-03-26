@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
+
 const Terms = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-4">Terms of Service</h1>
-        <p className="text-sm text-muted-foreground mb-8">Last Updated: March 21, 2026</p>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-4">{t('terms.title')}</h1>
+        <p className="text-sm text-muted-foreground mb-8">{t('terms.lastUpdated')}</p>
 
         <div className="prose prose-slate max-w-none space-y-8">
           <section>
