@@ -17,6 +17,7 @@ import BlogPost from "./pages/blog/BlogPost";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import ErrorBoundary from "./components/ErrorBoundary";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+    <CookieConsent />
   </ErrorBoundary>
 );
 
