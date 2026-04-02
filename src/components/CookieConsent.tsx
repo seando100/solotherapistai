@@ -137,7 +137,9 @@ export default function CookieConsent() {
       <p style={{ margin: 0, flex: '1 1 300px', opacity: 0.9 }}>
         {t.message}{' '}
         <a
-          href="/privacy"
+          href="https://app.solosolutionsai.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{ color: '#93c5fd', textDecoration: 'underline' }}
         >
           {t.privacy}

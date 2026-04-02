@@ -23,8 +23,8 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <Link to="/privacy" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.privacy')}</Link>
-            <Link to="/terms" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.terms')}</Link>
+            <a href="https://app.solosolutionsai.com/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.privacy')}</a>
+            <a href="https://app.solosolutionsai.com/terms" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.terms')}</a>
             <Link to="/contact" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.contact')}</Link>
           </div>
         </div>
