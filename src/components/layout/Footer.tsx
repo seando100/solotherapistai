@@ -23,17 +23,17 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <a href="https://app.solosolutionsai.com/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.privacy')}</a>
-            <a href="https://app.solosolutionsai.com/terms" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.terms')}</a>
+            <Link to="/privacy" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.privacy')}</Link>
+            <Link to="/terms" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.terms')}</Link>
             <Link to="/contact" className="text-sm text-gray-600 hover:text-black transition-colors">{t('footer.contact')}</Link>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mt-8">
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-500">
             &copy; {new Date().getFullYear()} {t('footer.copyright')}
           </p>
-          <a href="https://www.solosolutionsai.com" className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
+          <a href="https://www.solosolutionsai.com" className="text-xs text-gray-500 hover:text-gray-600 transition-colors">
             {t('footer.product')}
           </a>
         </div>

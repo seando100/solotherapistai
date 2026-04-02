@@ -386,7 +386,7 @@ const Benefits = () => {
           <p className="text-lg text-slate-600 leading-relaxed mb-8">
             {t('benefits.bottomLine.body')}
           </p>
-          <p className="text-sm text-slate-400 mb-10">
+          <p className="text-sm text-slate-500 mb-10">
             {t('benefits.bottomLine.tagline')}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -404,7 +404,7 @@ const Benefits = () => {
               {t('benefits.bottomLine.seeFeatures')}
             </Link>
           </div>
-          <p className="mt-3 text-xs text-slate-400">{t('benefits.bottomLine.trial')}</p>
+          <p className="mt-3 text-xs text-slate-500">{t('benefits.bottomLine.trial')}</p>
         </div>
       </section>
     </>

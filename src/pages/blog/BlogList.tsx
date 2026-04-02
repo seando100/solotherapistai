@@ -32,7 +32,7 @@ const BlogList = () => {
                 <span className="text-xs font-semibold uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
                   {lang === 'es' && post.categoryEs ? post.categoryEs : post.category}
                 </span>
-                <span className="flex items-center gap-1.5 text-xs text-gray-400">
+                <span className="flex items-center gap-1.5 text-xs text-gray-500">
                   <Calendar className="h-3 w-3" />
                   {post.date}
                 </span>
