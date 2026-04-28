@@ -5,14 +5,12 @@
   "nav.faq": "FAQ",
   "nav.blog": "Blog",
   "nav.joinWaitlist": "Join the Waitlist",
-
   "footer.tagline": "AI-powered patient intake for mental health professionals.",
   "footer.privacy": "Privacy",
   "footer.terms": "Terms",
   "footer.contact": "Contact",
   "footer.copyright": "SoloSolutionsAI. All rights reserved.",
   "footer.product": "A SoloSolutionsAI Product",
-
   "index.hero.badge": "AI-Powered Therapy Intake",
   "index.hero.coming": "Coming Q3 2026",
   "index.hero.title": "Your Next Patient Intake Runs Itself.",
@@ -20,13 +18,11 @@
   "index.hero.cta": "Join the Waitlist",
   "index.hero.seeFeatures": "See all features →",
   "index.hero.firstToKnow": "Be the first to know when we launch",
-
   "index.trust.hipaa": "Designed with HIPAA principles in mind",
   "index.trust.bilingual": "English & Spanish",
   "index.trust.channels": "Chat, phone & widget intake",
   "index.trust.alerts": "Instant email alerts",
   "index.trust.setup": "Setup in under 10 minutes",
-
   "index.pain.title": "Sound familiar?",
   "index.pain.subtitle": "Solo therapists lose patients and burn precious energy on the same three problems every day.",
   "index.pain.phone.title": "Phone tag with anxious patients",
@@ -36,7 +32,6 @@
   "index.pain.afterhours.title": "After-hours reach-outs go unanswered",
   "index.pain.afterhours.body": "Someone is struggling at 11pm on a Tuesday. They find your website, ready to take the first step — but there's no way to connect. By morning, the window of motivation has closed.",
   "index.pain.footer": "SoloTherapistAI handles all three — automatically.",
-
   "index.features.title": "Everything you need. Nothing you don't.",
   "index.features.subtitle": "Six powerful capabilities that transform how solo therapists welcome new patients.",
   "index.features.intake.title": "AI Patient Intake",
@@ -52,7 +47,6 @@
   "index.features.marketing.title": "Marketing Kit",
   "index.features.marketing.body": "Generate platform-ready social posts and branded visual cards about mental health awareness, self-care tips, and practice visibility — for Facebook, Instagram, LinkedIn, and Psychology Today.",
   "index.features.learnMore": "Learn more",
-
   "index.howItWorks.title": "Up and running in minutes",
   "index.howItWorks.subtitle": "From first login to receiving your first intake — three simple steps.",
   "index.howItWorks.step1.title": "Set up your profile",
@@ -61,7 +55,6 @@
   "index.howItWorks.step2.desc": "Add it to your website, Psychology Today profile, email signature, or anywhere you connect with prospective patients. Your AI handles every conversation — 24/7.",
   "index.howItWorks.step3.title": "Review and prepare",
   "index.howItWorks.step3.desc": "Get a structured summary with AI clinical insights the moment a patient submits. Know the presenting concerns, history, and the right questions before your first session.",
-
   "index.dual.title": "Better for You. Better for Patients.",
   "index.dual.subtitle": "When your intake runs smarter, everyone wins — you reclaim your time between sessions, and patients feel heard and supported from the very first interaction.",
   "index.dual.forYou": "For You",
@@ -88,7 +81,6 @@
   "index.dual.step4.patient.body": "From \"I need to talk to someone\" to a meaningful first session — faster and more comfortably than you thought possible. You deserve care that starts the moment you reach out.",
   "index.dual.tagline": "The therapeutic relationship begins before the first session.",
   "index.dual.seeAllBenefits": "See all benefits",
-
   "index.pricing.title": "Simple, transparent pricing",
   "index.pricing.subtitle": "Start free for 14 days. Cancel anytime.",
   "index.pricing.starter": "Starter",
@@ -117,7 +109,6 @@
   "index.pricing.proPlusFeatures.4": "24/7 availability — never miss a call",
   "index.pricing.trial": "All plans include a 14-day free trial.",
   "index.pricing.comparePlans": "Compare plans →",
-
   "index.waitlist.title": "Get notified at launch",
   "index.waitlist.subtitle": "SoloTherapistAI is coming Q3 2026. Leave your info and we'll let you know the moment it's ready.",
   "index.waitlist.nameLabel": "Name",
@@ -132,16 +123,13 @@
   "index.waitlist.noSpam": "We'll notify you when SoloTherapistAI launches. No spam, ever.",
   "index.waitlist.success.title": "You're on the list!",
   "index.waitlist.success.body": "We'll notify you when SoloTherapistAI launches.",
-
   "index.closing.title": "Your intake runs while you're in session.",
   "index.closing.subtitle": "Stop losing prospective patients to missed calls and after-hours silence. Chat, phone, and document intake — always on, always warm, always ready.",
   "index.closing.cta": "Join the Waitlist",
   "index.closing.viewPricing": "View pricing →",
   "index.closing.coming": "Coming Q3 2026",
-
   "features.title": "Built for the Solo Therapist",
   "features.subtitle": "Intake by chat, phone, or widget. AI document analysis. Marketing tools. Everything you need to welcome new patients — without adding overhead or hiring staff.",
-
   "features.intake.title": "Intake That Feels Like a Conversation",
   "features.intake.desc": "Patients share their presenting concerns through a warm, conversational AI — in English or Spanish. No clinical jargon, no overwhelming forms. You get the details you need, and they feel heard from the very first interaction.",
   "features.intake.items.0": "Warm conversational AI chat mode and structured form mode",
@@ -151,7 +139,6 @@
   "features.intake.items.4": "Your confidentiality notice presented to every patient before they begin",
   "features.intake.items.5": "Your logo, practice name, and greeting — patients never see SoloTherapistAI",
   "features.intake.items.6": "Crisis detection: surfaces 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when needed",
-
   "features.phone.badge": "Pro+ Plan",
   "features.phone.title": "AI Phone Intake — 24/7",
   "features.phone.desc": "Give your practice a dedicated phone number where callers speak naturally with your AI assistant. A warm, professional conversation that captures every detail — no hold music, no phone trees, no missed connections with people who need support.",
@@ -160,7 +147,6 @@
   "features.phone.items.2": "Same structured summary, AI clinical notes, and email notifications",
   "features.phone.items.3": "Available 24/7 — never miss an after-hours or weekend call",
   "features.phone.items.4": "Intake source clearly labeled (Web Chat vs. Phone Call) in your portal",
-
   "features.sessionPrep.title": "Prepare for Every First Session",
   "features.sessionPrep.desc": "Every submission arrives with a structured patient summary and AI-generated session prep notes — flagging comorbidity indicators, treatment history patterns, and suggested therapeutic approaches — so you're prepared the moment you sit down together.",
   "features.sessionPrep.items.0": "Organized patient profile: name, contact, location, and presenting concerns",
@@ -168,7 +154,6 @@
   "features.sessionPrep.items.2": "Suggested first-session focus areas tailored to the presenting concern",
   "features.sessionPrep.items.3": "Delivered to your inbox the moment intake is submitted",
   "features.sessionPrep.items.4": "Patient receives a warm, branded confirmation with their submission summary",
-
   "features.docIntel.badge": "Pro+ Plan",
   "features.docIntel.title": "Documents In, Insights Out",
   "features.docIntel.desc": "Request insurance forms, referral letters, prior treatment records, and medication lists from patients with one click. AI recommends what to ask for based on the presenting concerns, patients upload securely, and every document is automatically analyzed — key dates, findings, and clinically relevant highlights — ready for your review.",
@@ -178,7 +163,6 @@
   "features.docIntel.items.3": "Handles PDFs, images, scanned documents, and Word files",
   "features.docIntel.items.4": "30-day secure retention — pass-through, not a vault",
   "features.docIntel.items.5": "No human ever views patient documents — fully automated",
-
   "features.intel.badge": "Pro+ Plan",
   "features.intel.title": "AI Intelligence Brief",
   "features.intel.desc": "Every intake automatically generates a deep-dive analysis that goes beyond summarizing what the patient shared. The Intelligence Brief identifies comorbidity indicators, treatment history patterns, risk factors, and suggests therapeutic considerations — so you walk into every first session with the clinical preparation of a specialist.",
@@ -187,7 +171,6 @@
   "features.intel.items.2": "Risk indicator identification with suggested safety planning considerations",
   "features.intel.items.3": "Suggested therapeutic approaches tailored to the presenting concern profile",
   "features.intel.items.4": "Delivered alongside the intake summary — no extra step required",
-
   "features.brand.title": "Your Brand, Your Link",
   "features.brand.desc": "Patients never see \"SoloTherapistAI.\" They see your practice name, your logo, and your intake page — at a URL you control. Every detail is configurable from your admin portal, and when they're ready for their first session, send a one-click scheduling invite.",
   "features.brand.items.0": "Your own vanity URL (e.g. solotherapistai.com/yourpractice)",
@@ -196,7 +179,6 @@
   "features.brand.items.3": "Configure confidentiality notices in English and Spanish",
   "features.brand.items.4": "Pause intake instantly with a custom unavailability message",
   "features.brand.items.5": "Send session invites via Calendly or any scheduling link",
-
   "features.marketingKit.badge": "Pro Plan",
   "features.marketingKit.title": "Grow Your Practice Visibility",
   "features.marketingKit.desc": "The Marketing Kit generates platform-ready social media posts and professionally branded visual cards in seconds — tailored to your practice, your specialties, and your intake link. Share mental health awareness content, self-care tips, and practice updates effortlessly.",
@@ -206,7 +188,6 @@
   "features.marketingKit.items.3": "5 color themes — or use your brand color pulled automatically from your logo",
   "features.marketingKit.items.4": "Website banner sizes included for your practice website or Psychology Today profile",
   "features.marketingKit.items.5": "Generate in English or Spanish — bilingual from the start",
-
   "features.integrations.title": "Connect to the Tools You Already Use",
   "features.integrations.desc": "Every completed intake can automatically flow to your CRM, your spreadsheets, your project management tools — wherever you need it. No copy-pasting, no manual data entry, no switching between tabs.",
   "features.integrations.items.0": "HubSpot CRM — connect your free HubSpot account and every intake automatically creates a contact with full details and AI context notes",
@@ -214,7 +195,6 @@
   "features.integrations.items.2": "Custom webhooks — send intake data to any endpoint with HMAC-signed payloads for security",
   "features.integrations.items.3": "Calendly — send one-click session invites with personalized booking links",
   "features.integrations.items.4": "Connect and disconnect in seconds — no developer required",
-
   "features.blog.badge": "Pro Plan",
   "features.blog.title": "AI Blog Posts That Bring Clients to You",
   "features.blog.desc": "Generate SEO-optimized blog posts tailored to your practice, your specialties, and your location — in seconds. Each post comes with a title, article, meta description, keywords, and a ready-to-post social media teaser. Content marketing without the content struggle.",
@@ -223,124 +203,100 @@
   "features.blog.items.2": "Social media teaser ready to post on any platform",
   "features.blog.items.3": "Pro: 3 posts/month · Pro+: 10 posts/month",
   "features.blog.items.4": "Copy any section with one click — paste directly to your website or social",
-
   "features.transcripts.title": "Full Conversation History",
   "features.transcripts.desc": "Every intake conversation — chat or phone — is preserved as a complete transcript. See exactly what your client said, how the AI guided the conversation, and review the full context before the session. Nothing gets lost in translation.",
   "features.transcripts.items.0": "Full chat bubble view of every conversation",
   "features.transcripts.items.1": "Chat and phone intake transcripts in one place",
   "features.transcripts.items.2": "Review before the session — see exactly what the client described",
   "features.transcripts.items.3": "Source label: Web Chat vs. Phone Call",
-
   "features.admin.title": "Admin Portal",
   "features.admin.desc": "Review every submission, track status, manage documents, and organize your patient pipeline in one place.",
   "features.admin.items.0": "Color-coded submission aging and triage",
   "features.admin.items.1": "Status workflow (new → scheduled → in treatment)",
   "features.admin.items.2": "Document request and review dashboard",
   "features.admin.items.3": "Chat and phone intake unified view",
-
   "features.email.title": "Email Notifications",
   "features.email.desc": "You and your patient both get a confirmation the moment an intake is submitted.",
   "features.email.items.0": "Instant therapist alert email",
   "features.email.items.1": "Warm, professional patient confirmation",
   "features.email.items.2": "Branded with your practice identity",
-
   "features.security.title": "Security & Data Protection",
   "features.security.desc": "Enterprise-grade security with AI-powered data boundary enforcement.",
   "features.security.items.0": "AES-256 encryption at rest, TLS in transit",
   "features.security.items.1": "AI detects and blocks SSN, credit card, and government ID data in real time",
   "features.security.items.2": "No human review — fully automated AI processing",
   "features.security.items.3": "30-day document retention with deletion rights",
-
   "features.cta.title": "Ready to Transform Your Practice?",
   "features.cta.subtitle": "Coming Q3 2026.",
   "features.cta.joinWaitlist": "Join the Waitlist",
   "features.cta.viewPricing": "View Pricing",
-
   "benefits.hero.title": "Better for You. Better for Patients.",
   "benefits.hero.subtitle": "When your intake runs smarter, everyone wins. You reclaim your time between sessions and walk into every first meeting prepared. Your patients feel heard, supported, and cared for — from the very first interaction.",
   "benefits.journey.title": "The Intake Journey",
   "benefits.journey.subtitle": "Follow a patient from first contact to first session — and see how every step creates value for both sides.",
   "benefits.forYou": "For You",
   "benefits.forPatients": "For Patients",
-
   "benefits.step1.label": "Patient Reaches Out",
   "benefits.step1.you.title": "Never miss a new patient",
   "benefits.step1.you.body": "Intake runs 24/7 — nights, weekends, holidays. Every person who reaches out is captured the moment they find the courage to take that first step. No more lost connections to voicemail or after-hours silence.",
   "benefits.step1.patient.title": "Get a caring response the moment you're ready",
   "benefits.step1.patient.body": "No voicemail, no waiting until Monday. Reach out at midnight when the weight feels heaviest and get an immediate, warm, judgment-free response. Your healing journey starts on your schedule.",
-
   "benefits.step2.label": "AI Conversation",
   "benefits.step2.you.title": "Every detail captured with care",
   "benefits.step2.you.body": "Structured intake with all the information you need — no rushed intake calls between sessions, no missed details, no 20-minute screening calls. Every answer organized and ready for review.",
   "benefits.step2.patient.title": "Share your story in a safe, unhurried space",
   "benefits.step2.patient.body": "No intimidating forms or clinical jargon. A warm, empathetic conversation that feels safe — in English or Spanish. Share what you're going through at your own pace, in your own words.",
-
   "benefits.step3.label": "Therapist Reviews",
   "benefits.step3.you.title": "Walk into every first session fully prepared",
   "benefits.step3.you.body": "AI-generated session prep with comorbidity flags, treatment history patterns, and suggested therapeutic approaches — before you ever sit down together. Know the person, the concerns, and the right starting point.",
   "benefits.step3.patient.title": "Your therapist already understands your situation",
   "benefits.step3.patient.body": "No repeating yourself. No starting from zero. Your first real conversation starts where it should — with understanding, connection, and a plan for moving forward together.",
-
   "benefits.step4.label": "First Session",
   "benefits.step4.you.title": "More time for what matters",
   "benefits.step4.you.body": "Spend your session on therapeutic work and building rapport — not gathering demographics or walking through the same screening questions. Focus on what you became a therapist to do.",
   "benefits.step4.patient.title": "A faster path to feeling better",
   "benefits.step4.patient.body": "From 'I need to talk to someone' to a meaningful first session — faster and more comfortably than you thought possible. The depth of a specialist with the personal warmth of someone who truly cares.",
-
   "benefits.additional.title": "Every Feature, Two Winners",
   "benefits.additional.subtitle": "Beyond the intake journey, every capability in SoloTherapistAI creates a ripple effect — making your practice more efficient and your patients' experience more supportive and professional.",
-
   "benefits.bilingual.title": "Bilingual Intake",
   "benefits.bilingual.you": "Serve Spanish-speaking patients without hiring bilingual staff or paying for interpreter services. Expand your practice reach.",
   "benefits.bilingual.patient": "Communicate in the language you're most comfortable in — sharing vulnerable feelings is hard enough without a language barrier.",
-
   "benefits.phoneIntake.title": "AI Phone Intake",
   "benefits.phoneIntake.you": "A dedicated phone line that handles intake calls 24/7. Same structured summary, zero phone tag between sessions.",
   "benefits.phoneIntake.patient": "Prefer talking over typing? Call anytime and speak naturally about what you're going through — no hold music, no phone trees.",
-
   "benefits.docIntel.title": "Document Intelligence",
   "benefits.docIntel.you": "AI analyzes uploaded insurance forms, referral letters, prior treatment records, and medication lists — extracting key details and clinical highlights before you review.",
   "benefits.docIntel.patient": "A simple, secure way to share what's needed. Clear checklist, encrypted upload, no confusion about what to bring.",
-
   "benefits.crisis.title": "Crisis Detection & Safety",
   "benefits.crisis.you": "Built-in crisis detection surfaces the 988 Suicide & Crisis Lifeline and Crisis Text Line (text HOME to 741741) when language indicates acute distress. Risk indicators flagged in your summary.",
   "benefits.crisis.patient": "If you're in crisis, you'll be immediately connected to trained professionals who can help right now — 988 Suicide & Crisis Lifeline, available 24/7.",
-
   "benefits.security.title": "Privacy & Security",
   "benefits.security.you": "Designed with HIPAA principles in mind. End-to-end encryption, confidentiality protections, and 30-day document retention with deletion rights.",
   "benefits.security.patient": "Everything you share is treated with the same confidentiality as an in-person conversation. Fully encrypted, fully automated — no human sees your data.",
-
   "benefits.widget.title": "Website Widget",
   "benefits.widget.you": "One line of code embeds intake directly on your WordPress or any website. Capture prospective patients where they already are.",
   "benefits.widget.patient": "Start your intake without leaving your therapist's website. No new tabs, no separate portals — just a welcoming conversation right where you are.",
-
   "benefits.intel.title": "AI Intelligence Brief",
   "benefits.intel.you": "Every intake generates a deep-dive analysis — comorbidity flags, treatment history patterns, risk indicators, and suggested therapeutic approaches for the first session.",
   "benefits.intel.patient": "Your therapist spots patterns and concerns you might not have connected yourself — not just what you came in for, but the full picture of what's affecting your wellbeing.",
-
   "benefits.marketingKit.title": "Marketing Kit",
   "benefits.marketingKit.you": "Generate branded social posts and visual cards for Facebook, Instagram, LinkedIn, and Psychology Today in seconds — no designer, no copywriter needed.",
   "benefits.marketingKit.patient": "Find a therapist who feels right for you — on social media, directories, and community boards. One click starts your intake journey.",
-
   "benefits.crm.title": "CRM Integration",
   "benefits.crm.you": "Connect HubSpot (free) and every completed intake automatically creates a contact with full details and AI context notes. Zero manual data entry.",
   "benefits.crm.patient": "Your therapist has your information organized and ready before your first session. Faster follow-ups, fewer repeat questions.",
-
   "benefits.zapier.title": "Zapier & Webhooks",
   "benefits.zapier.you": "Send intake data to Google Sheets, Slack, Mailchimp, or any of 6,000+ apps automatically. Build the workflow that fits your practice.",
   "benefits.zapier.patient": "Your submission triggers the right actions immediately — appointment scheduling, welcome emails, or follow-up reminders — without anyone manually pushing buttons.",
-
   "benefits.blogGen.title": "AI Blog Generation",
   "benefits.blogGen.you": "Generate SEO-optimized blog posts tailored to your specialties and location. Each post comes with title, article, keywords, and a social media teaser — content marketing without the struggle.",
   "benefits.blogGen.patient": "Find helpful, expert mental health content from a local therapist you can trust — not generic internet advice. When you're ready, your therapist is one click away.",
-
   "benefits.bottomLine.title": "The Real Difference",
   "benefits.bottomLine.body": "Solo therapists don't have intake coordinators, front-desk staff, or 24/7 answering services. Your patients don't know that — and with SoloTherapistAI, they'll never need to. Every interaction feels like a well-staffed practice with the personal depth and warmth only a solo practitioner can provide.",
   "benefits.bottomLine.tagline": "The therapeutic relationship begins before the first session.",
   "benefits.bottomLine.cta": "Join the Waitlist",
   "benefits.bottomLine.seeFeatures": "See all features →",
   "benefits.bottomLine.trial": "14-day free trial · Cancel anytime",
-
   "pricing.title": "Simple, Transparent Pricing",
   "pricing.subtitle": "Start with the intake automation you need. Add the marketing tools when you're ready to grow your practice.",
   "pricing.starter": "Starter",
@@ -375,10 +331,8 @@
   "pricing.proPlusFeatures.2": "Patients speak naturally with your AI assistant — 24/7, in a warm, safe environment",
   "pricing.proPlusFeatures.3": "Document Intelligence — request, receive, and AI-analyze clinical documents",
   "pricing.proPlusFeatures.4": "AI extracts treatment history, medication lists, diagnoses, and insurance details",
-  "pricing.proPlusFeatures.5": "Secure encrypted uploads with 30-day retention",
   "pricing.proPlusFeatures.6": "Phone number displayed in Marketing Kit materials",
   "pricing.trial": "All plans include a 14-day free trial. Your card is required at signup but you won't be charged until day 15.",
-
   "pricing.faq.title": "Frequently Asked Questions",
   "pricing.faq.q1": "What's included in the free trial?",
   "pricing.faq.a1": "Your 14-day free trial gives you full access to everything. A credit card is required at signup, but you won't be charged until day 15.",
@@ -390,11 +344,9 @@
   "pricing.faq.a4": "Yes. Upgrade anytime with prorated billing. Downgrades take effect at your next billing period.",
   "pricing.faq.q5": "Can I cancel anytime?",
   "pricing.faq.a5": "Yes. Cancel from your account settings. Access continues through the end of your billing period.",
-
   "pricing.cta.title": "Ready to Get Started?",
   "pricing.cta.subtitle": "SoloTherapistAI is coming Q3 2026. Join the waitlist to be first in line.",
   "pricing.cta.joinWaitlist": "Join the Waitlist",
-
   "faq.title": "Frequently Asked Questions",
   "faq.subtitle": "Everything you need to know about SoloTherapistAI.",
   "faq.section.howItWorks": "How It Works",
@@ -402,7 +354,6 @@
   "faq.section.privacy": "Privacy & Compliance",
   "faq.section.billing": "Plans & Billing",
   "faq.section.support": "Support",
-
   "faq.how1.q": "How does the AI patient intake work?",
   "faq.how1.a": "When a prospective patient visits your intake link, they're guided through a warm, conversational intake experience. The AI gently asks about their presenting concerns, therapy history, what they're hoping to get from therapy, scheduling preferences, and insurance information. Patients respond naturally in their own words, and the system structures their answers into a clean intake summary delivered to your inbox.",
   "faq.how2.q": "What happens after a patient submits?",
@@ -413,32 +364,26 @@
   "faq.how4.a": "The AI includes an automated safety detection feature. If it detects language indicating immediate risk of harm to self or others, it provides the 988 Suicide & Crisis Lifeline number and Crisis Text Line information. This is an automated safety measure — it does not replace your clinical risk assessment protocols. You will also be notified immediately via your intake summary.",
   "faq.how5.q": "Does it support bilingual intake?",
   "faq.how5.a": "Yes. Full English and Spanish support. Patients select their preferred language at the start. The entire intake is delivered in their chosen language. Your notification emails are always in English.",
-
   "faq.setup1.q": "How long does setup take?",
   "faq.setup1.a": "Most therapists are set up within 10 minutes. Enter your practice name, credentials, upload your logo, select therapeutic specializations, write a welcoming greeting, add custom intake questions, and connect your scheduling link.",
   "faq.setup2.q": "What specializations are supported?",
   "faq.setup2.a": "Anxiety, depression, trauma/PTSD, couples/marriage, family, grief/loss, addiction/substance abuse, ADHD, eating disorders, OCD, child/adolescent, LGBTQ+ affirming, anger management, life transitions, and more. You can add custom specializations.",
-
   "faq.sec1.q": "Is SoloTherapistAI HIPAA compliant?",
   "faq.sec1.a": "SoloTherapistAI is designed with HIPAA principles in mind — all data is encrypted in transit (TLS) and at rest (AES-256), documents auto-delete after 30 days, no human reviews intake data, and the AI provider does not use your data for training. We recommend consulting with your compliance advisor to ensure it meets your specific requirements.",
   "faq.sec2.q": "Who can see my patients' intake submissions?",
   "faq.sec2.a": "Only you. Intake data is scoped strictly to your account. No data is shared across accounts. The AI-generated session prep notes are for your eyes only and never shared with the patient.",
-
   "faq.billing1.q": "Do you offer a free trial?",
   "faq.billing1.a": "Yes. 14-day free trial with full access. Credit card required but not charged until day 15.",
   "faq.billing2.q": "What is the difference between plans?",
   "faq.billing2.a": "Starter ($49/month) — 50 intakes, full intake system. Pro ($79/month) — 150 intakes + Marketing Kit. Pro+ ($119/month) — unlimited intakes + AI phone line + Document Intelligence.",
-
   "faq.support1.q": "Is this only for solo practitioners?",
   "faq.support1.a": "Built for solo therapists and small group practices. Each account is one therapist, one intake link, one inbox. Group practices can set up individual accounts per clinician.",
   "faq.support2.q": "What if I need help?",
   "faq.support2.a": "Reach us at sean@solosolutionsai.com. We respond within one business day. You can also use the contact form.",
-
   "faq.cta.title": "Still Have Questions?",
   "faq.cta.subtitle": "We're here to help.",
   "faq.cta.joinWaitlist": "Join the Waitlist",
   "faq.cta.contactUs": "Contact Us",
-
   "contact.title": "Get In Touch",
   "contact.subtitle": "Have questions about SoloTherapistAI? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
   "contact.email.title": "Email Us",
@@ -459,17 +404,13 @@
   "contact.form.submit": "Send Message",
   "contact.form.success.title": "Thanks for reaching out!",
   "contact.form.success.body": "We'll notify you when SoloTherapistAI launches.",
-
   "privacy.title": "Privacy Policy",
   "privacy.lastUpdated": "Last Updated: March 21, 2026",
-
   "terms.title": "Terms of Service",
   "terms.lastUpdated": "Last Updated: March 21, 2026",
-
   "notFound.title": "404",
   "notFound.message": "Oops! Page not found",
   "notFound.link": "Return to Home",
-
   "blog.header.title": "Blog",
   "blog.header.subtitle": "Insights on AI, client onboarding, lead generation, and growing your practice.",
   "blog.readMore": "Read more",
