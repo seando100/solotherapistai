@@ -2,5 +2,10 @@
   "version": 2,
   "buildCommand": "npm run build",
   "framework": "vite",
+  "redirects": [
+    { "source": "/es", "destination": "https://www.solobusinessai.com/es/for-therapists", "permanent": true },
+    { "source": "/es/(.*)", "destination": "https://www.solobusinessai.com/es/for-therapists", "permanent": true },
+    { "source": "/(.*)", "destination": "https://www.solobusinessai.com/for-therapists", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
